@@ -1,0 +1,150 @@
+a, button {
+	color: #553445;
+	text-decoration: none;
+	outline: none;
+}
+
+a:hover, a:focus {
+	color: #e75854;
+}
+
+.codrops-header {
+	margin: 0 auto;
+	padding: 2em;
+	text-align: center;
+}
+
+.codrops-header h1 {
+	margin: 0;
+	font-weight: 800;
+	font-size: 3em;
+	font-family: "Merriweather Sans", sans-serif;
+}
+
+.codrops-header p {
+	padding: 0.35em 0 1.25em;
+	margin: 0;
+	font-size: 1.65em;
+	opacity: 0.7;
+}
+
+/* Codrops Demos */
+.codrops-demos a {
+	font-family: "Merriweather Sans", sans-serif;
+	text-transform: uppercase;
+	display: inline-block;
+	margin: 0 10px;
+}
+
+.codrops-demos a.current-demo {
+	color: #e75854;
+}
+
+/* Top Navigation Style */
+.codrops-top {
+	width: 100%;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 0.69em;
+	line-height: 2.2;
+}
+
+.codrops-top a {
+	display: inline-block;
+	padding: 0 1em;
+	text-decoration: none;
+	letter-spacing: 1px;
+}
+
+.codrops-top span.right {
+	float: right;
+}
+
+.codrops-top span.right a {
+	display: block;
+	float: left;
+}
+
+.codrops-icon:before {
+	margin: 0 4px;
+	text-transform: none;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	font-family: 'codropsicons';
+	line-height: 1;
+	speak: none;
+	-webkit-font-smoothing: antialiased;
+}
+
+.codrops-icon-drop:before {
+	content: "\e001";
+}
+
+.codrops-icon-prev:before {
+	content: "\e004";
+}
+
+section {
+	padding: 2em;
+	text-align: justify;
+	max-width: 800px;
+	margin: 0 auto;
+	clear: both;
+}
+
+section p {
+	font-size: 1.5em;
+	line-height: 1.75;
+}
+
+section > p:first-child {
+	text-align: center;
+}
+
+section.related {
+	text-align: center;
+}
+
+.related p {
+	font-weight: 700;
+}
+
+.related > a {
+	border: 2px solid #faf1e0;
+	color: #faf1e0;
+	display: inline-block;
+	text-align: center;
+	margin: 20px 10px;
+	padding: 20px;
+	-webkit-transition: color 0.3s, border-color 0.3s;
+	transition: color 0.3s, border-color 0.3s;
+}
+
+.related a:hover {
+	color: rgba(0,0,0,0.2);
+	border-color: rgba(0,0,0,0.2);
+}
+
+.related a img {
+	max-width: 100%;
+	opacity: 0.8;
+	-webkit-transition: opacity 0.3s;
+	transition: opacity 0.3s;
+}
+
+.related a:hover img,
+.related a:active img {
+	opacity: 1;
+}
+
+.related a h3 {
+	margin: 0;
+	padding: 0.5em 0 0.3em;
+	max-width: 300px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 1em;
+	text-align: left;
+	font-family: "Merriweather Sans", sans-serif;
+}

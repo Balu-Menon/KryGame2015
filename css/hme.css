@@ -1,0 +1,133 @@
+.home-btn {
+    background: url(../img/btn_raid_bg.png) 0%;
+    margin-top: -300px;
+    margin-left: 32%;
+    width: 480px;
+    height: 73px;    
+}
+
+body {
+    overflow: hidden;
+}
+
+.home-btn a{
+    text-decoration: none;
+    font-family: 'trajan-pro-3-600';
+    font-weight: 600;
+    font-size: 1.5em;
+    color: #000;
+    line-height: 70px;
+}
+
+.content a{
+    text-decoration: none;
+    text-align: center;
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+	display: block;
+	color: white;
+	width: 336px;
+	height: 58px;
+	line-height: 50px;
+	font-family: 'trajan-pro-3-600', serif;
+	font-weight:400;
+	font-size: 20px;
+	background: url('../img/btn_raid_bg.png') 50% 0% no-repeat;
+	color: #c5c5c5;
+}
+.content a:hover{
+	background-position: 50% 100%;
+	color: white;
+}
+
+#fblogin {
+    margin-top: 5%;
+    margin-left: 50%;
+}
+
+#main-btn2 {
+    margin-top: 4%;
+    margin-left: 70%;
+}
+
+#clg-logo {
+    margin-top:-35px;
+    width: 200px;
+    margin-right: 20px;
+    float: right;
+}
+
+#excel-logo {
+    margin-top:-60px;
+    width: 200px;
+    margin-left: 20px;
+    float: left;
+}
+
+#kryptos-logo {
+    margin-top:-32%;
+    width: 500px;
+    margin-left: 30%;
+    float: left;
+}
+
+#error-btn {
+    left:50%;
+    top:56%;
+}
+
+.social a{
+    text-decoration: none;
+    text-align: center;
+	position: absolute;
+	left: 97%;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+	display: block;
+	color: white;
+	width: 4%;
+	height: 58px;
+	line-height: 50px;
+}
+
+#soc1 {
+    top:40%;
+    background: url('../img/social_btn.png') 0% 0% no-repeat;
+}
+
+#soc2 {
+    top:47%;
+    background: url('../img/social_btn.png') 18% 0% no-repeat;
+}
+
+#soc3 {
+    top:54%;
+    background: url('../img/social_btn.png') 73% 0% no-repeat;
+}
+
+#soc4 {
+    top:61%;
+    background: url('../img/social_btn.png') 91% 0% no-repeat;
+}
+
+#soc1:hover {
+    background: url('../img/social_btn.png') 9.2% 0% no-repeat;
+}
+
+#soc2:hover {
+    background: url('../img/social_btn.png') 27.2% 0% no-repeat;
+}
+
+#soc3:hover {
+    background: url('../img/social_btn.png') 82.2% 0% no-repeat;
+}
+
+#soc4:hover {
+    background: url('../img/social_btn.png') 100.2% 0% no-repeat;
+}
+
+#login {
+    text-align: center;
+}
