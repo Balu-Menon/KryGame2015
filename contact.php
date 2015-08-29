@@ -37,12 +37,12 @@
         <nav>
             <div id="main-nav" class="nav-area init-nav">
                 <ul>
-                    <li class="nav-link"><a href="#">Home</a></li>
-                    <li class="nav-link"><a href="#">Battle Grounds</a></li>
-                    <li class="nav-link"><a href="#">War Rules</a></li>
-                    <li class="nav-link"><a href="#">Heroes' Journeys</a></li>
-                    <li class="nav-link"><a href="#">Contact Us</a></li>
-                    <li class="nav-link"><a href="#">Our Community</a></li>
+                    <li class="nav-link"><a href="index.html">Home</a></li>
+                    <!--li class="nav-link"><a href="battlegrounds.php">Battle Grounds</a></li-->
+                    <li class="nav-link"><a href="rules.php">War Rules</a></li>
+                    <li class="nav-link"><a href="leaderboard/">Heroes' Journeys</a></li>
+                    <li class="nav-link"><a href="contact.php">Contact Us</a></li>
+                    <li class="nav-link"><a href="https://www.facebook.com/thekryptosmec" target="_blank">Our Community</a></li>
                 </ul>
             
                 <div id="nav-ornament"></div>
