@@ -54,7 +54,7 @@ $_SESSION['leader']=rand(1,48);
                             $row1=mysql_fetch_array($recset1);
                             $rno=rand (1,27);
                             $str="i".$rno.".jpg";
-                            if($i%4==0) {
+                            if($i%4==0)
                                 echo "<div class=\"row\">";
                             echo "<div class=\"col s3\">".
                             "<ul class=\"cd-item-wrapper\">".
@@ -71,7 +71,6 @@ $_SESSION['leader']=rand(1,48);
                                 "</li>".
                             "</ul>".
                         "</div>";
-                            }
                         if($i%4==3) 
                             echo "</div>";
                         $i++;
