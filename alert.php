@@ -20,26 +20,23 @@
         <link rel="stylesheet" href="css/cards.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/bg.css">
+        <link rel="stylesheet" href="css/hme.css">
     </head>
     <body>
         <div id="main-section" class="section">
-            <nav>
-                <div id="main-nav" class="nav-area init-nav">
-                    
-                    <ul>
-                        <li class="nav-link"><a href="index.html">Home</a></li>
-                        <li class="nav-link"><a href="battlegrounds.php">Battle Grounds</a></li>
-                        <li class="nav-link"><a href="rules.php">War Rules</a></li>
-                        <li class="nav-link"><a href="leaderboard/">Heroes' Journeys</a></li>
-                        <li class="nav-link"><a href="">Contact Us</a></li>
-                        <li class="nav-link"><a href="https://www.facebook.com/thekryptosmec" target="_blank">Our Community</a></li>
-                    </ul>
-                    <div id="nav-ornament"></div>
-                </div>
-            </nav>
+        </div>
+        <a href="http://kryptos.excelmec.org/" target="_blank"><img id="kryptos-logo" src="img/krylogo.png"></a>
+        <a href="http://mec.ac.in/" target="_blank"><img id="clg-logo" src="img/mec_logo.png"></a>
+        <a href="http://excelmec.org/excel2015/" target="_blank"><img id="excel-logo" src="img/excel_ribbon.png"></a>
+        <!--social-->
+        <div class="social">
+            <a href="https://www.facebook.com/excelmec" target="_blank" id="soc1" alt="facebook"></a>
+            <a href="https://plus.google.com/105749244546874520653/posts" target="_blank" id="soc2" alt="gplus"></a>
+            <a href="https://twitter.com/excelmec" target="_blank" id="soc3" alt="twitter"></a>
+            <a href="https://www.youtube.com/user/excelmec/feed" target="_blank" id="soc4" alt="youtube"></a>
         </div>
         <div class="coming_soon">
-            <h2>Coming Soooooooooooooon!</h2>
+            <h2>Please Logout out of facebook <br>Or<br> Clear Your Cache/Cookies.</h2>
         </div>
         <!--Scripts-->
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>

@@ -1,7 +1,7 @@
 <?php
 	session_start();
 	ini_set('session.cookie_lifetime',  0);
-
+    require_once 'authen.php';
 
 	if(!isset($_SESSION['usrno']) || $_SESSION['lev']!='level3.php')
 	{

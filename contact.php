@@ -108,7 +108,7 @@
                     <figure>
                         <img class="size-small aligncenter" src="img/Aishu.jpg"  width="150px" height="150px">                   
                     </figure>
-                    <p> AISWARYA ASHOKKUMAR<br>+918129130866<br>aiswarya11235@gmail.com</p>                  
+                    <p> AISHWARYA ASHOKKUMAR<br>+918129130866<br>aishwarya11235@gmail.com</p>                  
                     <figure>
                         <img class="size-small alignright" src="img/alan.jpg"  width="150px" height="150px">           
                     </figure>
