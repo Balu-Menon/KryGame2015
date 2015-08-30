@@ -14,7 +14,7 @@ $_SESSION['leader']=rand(1,48);
         <link rel="stylesheet" href="../css/font_base64-0.css" type="text/css" media="all" />
         <link rel="dns-prefetch" href="//ajax.googleapis.com" />
         <!--link rel="dns-prefetch" href="//connect.facebook.net"/ -->
-    
+        <link rel="icon" type="image/png" href="img/img.png" />
         <link rel="stylesheet" href="../css/normalize.min.css">
          <link rel="canonical" href="" />
         <link rel="stylesheet" href="../css/leader.css">

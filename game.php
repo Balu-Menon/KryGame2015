@@ -27,7 +27,7 @@ if($dif<=0)
         <script src="js/modernizr.custom.js"></script>
         <script src="//use.typekit.net/czo0wjz.js"></script>
         <script>try{Typekit.load();}catch(e){}</script>
-        <link rel="stylesheet" href="css/login_form.css">
+        
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/hme.css">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
