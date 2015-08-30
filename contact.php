@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <!-- <meta http-equiv="refresh" content="5"> -->
-    <title>Beta</title>
+    <title>Kryptos | Excel 2015</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
@@ -17,10 +17,33 @@
     <script>try{Typekit.load();}catch(e){}</script>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/hme.css"> 
-    <link rel="stylesheet" href="css/contact.css">   
+    <link rel="stylesheet" href="css/contact.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.nicescroll/3.6.0/jquery.nicescroll.min.js"></script>
 </head>
 <body>
-        <div id="fb-root"></div>
+    <script type="text/javascript">
+        $(window).load(function(){
+            $("#loadingpage").css("display","none");
+        });
+        $(document).ready(function(){
+            $("#wr").niceScroll({
+                scrollspeed: 75,
+                mousescrollstep: 40,
+                zindex: 70001,
+                hidecursordelay: 400,
+                cursoropacitymin: 0.4,
+                cursoropacitymax: 0.9,
+                cursorwidth: "7px",
+                cursorborderradius: "3px",
+                horizrailenabled: false
+            });    
+        });
+    </script>
+    <div id="loadingpage" style="display:visible; position:absolute; left:0%; top:0%; z-index:1000; background-color:white;  height:100%; width:100%;">
+        <img src="img/loader.gif" style="position:relative;display:block;  top:35%; margin-left:auto; margin-right:auto;">
+    </div>    
+    <div id="fb-root"></div>
         <script>
             (function(d, s, id) {
                 var js, fjs = d.getElementsByTagName(s)[0];
@@ -73,94 +96,56 @@
     <div id="wr">
         <font color="#C0C0C0";>
             <h2 id="hc" >CONTACT US</h2>
-            <hr> <div id="rl">
+            <hr> 
+            <div>
             <div class="commentable-wrapper" id="rl">
-               
-             
-                
-                
-              <div id="lft">  
-                   <figure>
-                    <img class="size-small aligncenter" src="img/Balu.jpg" width="150px" height="150px">
-                    
-                </figure>
-                   <p> Balram P Menon<br>+918129130866<br>balbbrl@gmail.com</p>
-                
-            
-                 <figure>
-                    <img class="size-small aligncenter" src="img/Aishu.jpg"  width="150px" height="150px">
-                   
-                </figure>
-                   <p> AISWARYA ASHOKKUMAR<br>+918129130866<br>aiswarya11235@gmail.com</p>
-                  
-                   <figure>
-                    <img class="size-small alignright" src="img/alan.jpg"  width="150px" height="150px">
-                   
-                </figure>
-                   <p> ALAN JOSE<br>+919946789045<br>alanjose10@gmail.com</p>
-                    
-           
-                </div>
-               
-         <div id="cnt">  
-                
-             <figure>
-                    <img class="size-small alignright" src="img/anil.jpg"  width="150px" height="150px">
-                    
-                </figure>
-                   <p> Anil V Sajith<br>+919400879335<br>anilvsajith@gmail.com</p>
-                   
-                   
-        
-                 <figure>
-                    <img class="size-small alignleft" src="img/jose.jpg"  width="150px" height="150px">
-                    
-                </figure>
-                   <p> Jose Antony<br>+919496863403<br>joseantonythundathil@gmail.com</p>
-        
-                
-                 <figure>
-                    <img class="size-small alignleft" src="img/sara.jpg" width="150px" height="150px">
-                   
-                </figure>
-                   <p> SARATH SAJEEV<br>sarathsajeev1995@gmail.com</p>
-            
-              </div>
-                  
-                <div id="rht">  
-                   
+                <div id="lft">  
                     <figure>
-                    <img class="size-small alignleft" src="img/rosh.jpg" width="150px" height="150px">
-                   
-                </figure>
-                   <p> Roshan abhishek babu<br>+919747751724<br>roshanabhishek9595@gmail.com</p>
-            
-                
-        
-                  <figure>
-                    <img class="size-small alignleft" src="img/raveen.jpg" width="150px" height="150px">
-                   
-                </figure>
-                   <p> Raveen Ajay Kumar<br>+919744271300<br>raveen4life@gmail.com</p>
-                
-            
-                
-               <figure>
-                    <img class="size-small alignleft" src="img/swetha.jpg" width="158px" height="158px">
-                   
-                </figure>
-                   <p> SWETHA naik<br>swetharnaik.mec@gmail.com</p>
-            
-                   </div> 
+                        <img class="size-small aligncenter" src="img/Balu.jpg" width="150px" height="150px">
+                    </figure>
+                    <p> Balram P Menon<br>+918129130866<br>balbbrl@gmail.com</p>
+                    <figure>
+                        <img class="size-small aligncenter" src="img/Aishu.jpg"  width="150px" height="150px">                   
+                    </figure>
+                    <p> AISWARYA ASHOKKUMAR<br>+918129130866<br>aiswarya11235@gmail.com</p>                  
+                    <figure>
+                        <img class="size-small alignright" src="img/alan.jpg"  width="150px" height="150px">           
+                    </figure>
+                    <p> ALAN JOSE<br>+919946789045<br>alanjose10@gmail.com</p>
+                </div>              
+                <div id="cnt">  
+                    <figure>
+                        <img class="size-small alignright" src="img/anil.jpg"  width="150px" height="150px">
+                    </figure>
+                    <p> Anil V Sajith<br>+919400879335<br>anilvsajith@gmail.com</p>
+                    <figure>
+                        <img class="size-small alignleft" src="img/jose.jpg"  width="150px" height="150px">
+                    </figure>
+                    <p> Jose Antony<br>+919496863403<br>joseantonythundathil@gmail.com</p>
+                    <figure>
+                        <img class="size-small alignleft" src="img/sara.jpg" width="150px" height="150px">
+                    </figure>
+                    <p> SARATH SAJEEV<br>sarathsajeev1995@gmail.com</p>
+                </div>
+                <div id="rht">  
+                    <figure>
+                        <img class="size-small alignleft" src="img/rosh.jpg" width="150px" height="150px">
+                    </figure>
+                    <p> Roshan abhishek babu<br>+919747751724<br>roshanabhishek9595@gmail.com</p>
+                    <figure>
+                        <img class="size-small alignleft" src="img/raveen.jpg" width="150px" height="150px">
+                    </figure>
+                    <p> Raveen Ajay Kumar<br>+919744271300<br>raveen4life@gmail.com</p>
+                    <figure>
+                        <img class="size-small alignleft" src="img/swetha.jpg" width="158px" height="158px">
+                    </figure>
+                    <p> SWETHA naik<br>swetharnaik.mec@gmail.com</p>
+                </div> 
             </div>
-       
+            </div>
+        </font>
     </div>
-             </font>
-        </div>
-
-
     <!--Scripts-->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <script src="js/scripts.js" type="text/javascript"></script>
     <script src="js/main.js" type="text/javascript"></script>
 </body>

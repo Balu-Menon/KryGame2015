@@ -3,7 +3,7 @@
 	ini_set('session.cookie_lifetime',  0);
 
 
-	if(!isset($_SESSION['usrno']) || $_SESSION['lev']!='level1.php')
+	if(!isset($_SESSION['usrno']) || $_SESSION['lev']!='level5.php')
 	{
 		header('Location:validate.php');
 	}
@@ -16,7 +16,7 @@
 <head>
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title>Level 1 | Kryptos</title>
+	<title>Level 5 | Kryptos</title>
     <meta name="description" content="Kryptos is an online Treasure hunt which is the best of its kind. Varied levels with puzzles, clues, cryptograohy, hacking is to be done for a true sherlock to win this game of Treasure hunt. Google and Wikipedia will help you to win this quest to win the bounty and find the treasure." />
     <meta name="keywords" content="excelmec, excel, mec, excel2015, 2015, online treasure hunt,online games, techfest, souoth india, kerala, cochin, model engineering college, model, engineering college, college, academy, engineering, electronics, computer science, electrical, biomedical, bio-medical, technology, inspire, innovate, biggest, technical, symposium"/>
     <link rel="icon" type="image/png" href="img/img.png" />
@@ -37,7 +37,6 @@
             $("#loadingpage").css("display","none");
         });
     </script>
-    <script type="text/javascript" src="js/facebook.js"></script>
     <div id="loadingpage" style="display:visible; position:absolute; left:0%; top:0%; z-index:1000; background-color:white;  height:100%; width:100%;">
         <img src="img/loader.gif" style="position:relative;display:block;  top:35%; margin-left:auto; margin-right:auto;">
     </div>
@@ -61,9 +60,8 @@
             <section class='input'>
                 <div>
                     <div id="quest">
-                        <h2 style="color:#1C1C1C;padding-top:7%;">The Nuance Of Iqlusion</h2>
                     </div>
-                    <!--CREATORs-->
+                    <!--Rexy-->
                     <form>
                         <input type='text' id="answer" placeholder='Answer here...' autocomplete="off">
                     </form>
@@ -139,6 +137,7 @@
         $(window).load(function(){
             //var modal3 = document.getElementById("meme");
             var modal8 = document.getElementById("meme");
+            $("#quest").load("quests/22ae9c541d32a71e81668105303581b0.txt");        
             $("#submitter").click(function(){
                 var answer=document.getElementById("answer").value;
                 var values="answer="+answer;
@@ -147,8 +146,8 @@
                     url: 'ans.php',
                     data: values,
                     success: function(data, status){
-                        console.log(data);
-                        var obj=JSON.parse(data);                        
+                        var obj=JSON.parse(data);
+                        
                         if(obj.resp=="563b9ab8b16c5c96be563348975b9783")
                         {
                             var wrongans=["Bad Luck Dude....","are you KIDDING ME...","You deserve a medal 4 tat one...","Go Sleep...","Are you desperate???","No comments...","Try Harder next time...","So smart..."];
@@ -164,6 +163,7 @@
                         }
                         else
                         {
+                            
                             window.location.replace('validate.php');
                         }
                     },

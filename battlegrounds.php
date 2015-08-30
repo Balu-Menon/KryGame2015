@@ -20,8 +20,17 @@
         <link rel="stylesheet" href="css/cards.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/bg.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     </head>
     <body>
+        <script type="text/javascript">
+            $(window).load(function(){
+                $("#loadingpage").css("display","none");
+            });
+        </script>
+        <div id="loadingpage" style="display:visible; position:absolute; left:0%; top:0%; z-index:1000; background-color:white;  height:100%; width:100%;">
+            <img src="img/loader.gif" style="position:relative;display:block;  top:35%; margin-left:auto; margin-right:auto;">
+        </div>
         <div id="main-section" class="section">
             <nav>
                 <div id="main-nav" class="nav-area init-nav">

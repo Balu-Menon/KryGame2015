@@ -28,6 +28,8 @@ body {
     background-size: cover;
     cursor: url(lol11.png), default !important;
     overflow-y: hidden;
+    font-family: "trajan-pro-3-600",serif;
+    
 }
 a:hover{
     cursor: url(lol22.png), default !important;
@@ -114,7 +116,7 @@ a:hover{
     margin: 0px;
     color: #C0C0C0;
     font-size:18px;
-    margin-top:-27%;
+    margin-top:-40%;
 }
 
 .coming_soon {

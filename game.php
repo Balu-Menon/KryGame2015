@@ -19,6 +19,7 @@ if($dif<=0)
         <meta name="description" content="Kryptos is an online Treasure hunt which is the best of its kind. Varied levels with puzzles, clues, cryptograohy, hacking is to be done for a true sherlock to win this game of Treasure hunt. Google and Wikipedia will help you to win this quest to win the bounty and find the treasure." />
         <meta name="keywords" content="excelmec, excel, mec, excel2015, 2015, online treasure hunt,online games, techfest, souoth india, kerala, cochin, model engineering college, model, engineering college, college, academy, engineering, electronics, computer science, electrical, biomedical, bio-medical, technology, inspire, innovate, biggest, technical, symposium"/>
         <meta name="viewport" content="width=device-width">
+        <link rel="icon" type="image/png" href="img/img.png" />
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/font_base64-0.css" type="text/css" media="all" />
@@ -29,8 +30,17 @@ if($dif<=0)
         <link rel="stylesheet" href="css/login_form.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/hme.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     </head>    
-    <body>        
+    <body>
+        <script type="text/javascript">
+            $(window).load(function(){
+                $("#loadingpage").css("display","none");
+            });
+        </script>
+        <div id="loadingpage" style="display:visible; position:absolute; left:0%; top:0%; z-index:1000; background-color:white;  height:100%; width:100%;">
+            <img src="img/loader.gif" style="position:relative;display:block;  top:35%; margin-left:auto; margin-right:auto;">
+        </div>
         <div id="fb-root"></div>
         <script>
             (function(d, s, id) {
@@ -82,37 +92,9 @@ if($dif<=0)
             <div class="fb-like" data-href="https://www.facebook.com/excelmec" data-layout="box_count" data-action="like" data-show-faces="true" data-share="true" style="position:relative; height:40px; width:40px; top:0%; left:3%;"></div>
             
         </div>
-        
-        <div class="md-modal md-effect-3" id="login">
-            <div class="md-content">
-                <h4>Login | Kryptos 2015</h4>
-                <div id='content'>
-                    <section class='input'>
-                        <div>
-                            <form>
-                                <input type='text' id="fname" placeholder='FirstName'>
-                                <input type='text' id="lname" placeholder='LastName'>
-                                <input type='text' id="dob" placeholder='Date Of Birth'>
-                                <input type='text' id="clg" placeholder='College'>
-                                <input type='submit' id="clg">
-                            </form>
-                        </div>
-                    </section>         
-                </div>
-                    <a class="md-close">Close me!</a>
-                </div>
-            </div>
-        
+        </embed>
         <!--Scripts-->
         <script src="js/classie.js"></script>
-        <script src="js/modalEffects.js"></script>
-        <script>
-            // this is important for IEs
-            var polyfilter_scriptpath = '/js/';
-        </script>
-        <script src="js/cssParser.js"></script>
-        <script src="js/css-filters-polyfill.js"></script>
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
         <script src="js/scripts.js" type="text/javascript"></script>
         <script src="js/main.js" type="text/javascript"></script>
         <script src="js/facebook.js" type="text/javascript"></script>

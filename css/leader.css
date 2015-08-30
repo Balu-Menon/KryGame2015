@@ -188,13 +188,7 @@ xgallery
 {
     width:2px;
 }
-.cd-gallery::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-}
- 
-.cd-gallery::-webkit-scrollbar-thumb {
-    background-color: #001F27;
-}
+
 .cd-gallery > li {
   position: relative;
   margin-bottom: 1em;
@@ -527,3 +521,79 @@ font-family: 'Amatic SC', cursive;
     .card .card-reveal .card-title {
       cursor: pointer;
       display: block; }
+
+
+#clg-logo {
+    margin-top:-35px;
+    width: 150px;
+    margin-right: 20px;
+    float: right;
+}
+
+#excel-logo {
+    margin-top:-60px;
+    width: 150px;
+    margin-left: 20px;
+    float: left;
+}
+
+
+.social a{
+    text-decoration: none;
+    text-align: center;
+	position: absolute;
+	left: 97%;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+	display: block;
+	color: white;
+	width: 4%;
+	height: 58px;
+	line-height: 50px;
+}
+
+#soc1 {
+    top:40%;
+    background: url('../img/social_btn.png') 0% 0% no-repeat;
+}
+
+#soc2 {
+    top:47%;
+    background: url('../img/social_btn.png') 18% 0% no-repeat;
+}
+
+#soc3 {
+    top:54%;
+    background: url('../img/social_btn.png') 73% 0% no-repeat;
+}
+
+#soc4 {
+    top:61%;
+    background: url('../img/social_btn.png') 91% 0% no-repeat;
+}
+
+#soc1:hover {
+    background: url('../img/social_btn.png') 9.2% 0% no-repeat;
+}
+
+#soc2:hover {
+    background: url('../img/social_btn.png') 27.2% 0% no-repeat;
+}
+
+#soc3:hover {
+    background: url('../img/social_btn.png') 82.2% 0% no-repeat;
+}
+
+#soc4:hover {
+    background: url('../img/social_btn.png') 100.2% 0% no-repeat;
+}
+
+.noEntry {
+    font-family: "trajan-pro-3-600",serif;
+    text-shadow: 0 1px 1px #000;
+    text-align: center;
+    margin: 0px;
+    color: #C0C0C0;
+    font-size:18px;
+    margin-top:-25%;
+}

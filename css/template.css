@@ -249,6 +249,7 @@ a:hover{
     font-family: "trajan-pro-3-600",serif;
     font-size: 20px;
     color: #161616;
+    margin-top:-6%;
 }
 
 .go{
@@ -399,5 +400,5 @@ canvas{
 }
 
 #quest img {
-    max-width:400px;
+    max-width:370px;
 }

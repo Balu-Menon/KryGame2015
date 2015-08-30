@@ -7,7 +7,6 @@
 <!--<![endif]-->
     <head>
         <title>404 | Kryptos</title>
-        
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="description" content="Kryptos is an online Treasure hunt which is the best of its kind. Varied levels with puzzles, clues, cryptograohy, hacking is to be done for a true sherlock to win this game of Treasure hunt. Google and Wikipedia will help you to win this quest to win the bounty and find the treasure." />
@@ -20,8 +19,17 @@
         <script>try{Typekit.load();}catch(e){}</script>
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/hme.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     </head>    
     <body>
+        <script type="text/javascript">
+            $(window).load(function(){
+                $("#loadingpage").css("display","none");
+            });
+        </script>
+        <div id="loadingpage" style="display:visible; position:absolute; left:0%; top:0%; z-index:1000; background-color:white;  height:100%; width:100%;">
+            <img src="img/loader.gif" style="position:relative;display:block;  top:35%; margin-left:auto; margin-right:auto;">
+        </div>
         <div id="fb-root"></div>
         <script>
             (function(d, s, id) {
@@ -47,6 +55,7 @@
         </div>
         
         <div class="error_msg">
+            <h2 style="font-size:60px;">404</h2>
             <p>Ooooooooopss! Seems like u're Lost.<br/> Stop snooping around and get back to the Game.</p>
             <div class="content">    
                 <a href="index.html" id="error-btn">Return to Game</a>
