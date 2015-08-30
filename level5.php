@@ -30,6 +30,7 @@
     <script src="//use.typekit.net/czo0wjz.js"></script>
     <script>try{Typekit.load();}catch(e){}</script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="js/facebook.js"></script>
 </head>
 <body>
     <script type="text/javascript">
@@ -163,7 +164,10 @@
                         }
                         else
                         {
-                            
+                            FB.api('/me/feed', 'post', {
+                                message: "I Just unlocked Level 5 of Kryptos! Can you do better? Prizes worth 15K!!!\nStart Playing Now!\nhttp://kryptos.excelmec.org/",
+                                name: "Kryptos 2015",
+                            });
                             window.location.replace('validate.php');
                         }
                     },

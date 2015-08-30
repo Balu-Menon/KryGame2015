@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/font_base64-0.css" type="text/css" media="all" />
     <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <script src="js/facebook.js"></script>
     <script src="js/modernizr.custom.js"></script>
     <script src="//use.typekit.net/czo0wjz.js"></script>
     <script>try{Typekit.load();}catch(e){}</script>
@@ -162,7 +163,10 @@
                         }
                         else
                         {
-                            /*FB.api('/me/feed', 'post', {caption: "Online Treasure Hunt: Excel2015", message: 'I Just unlocked Level 1 of Kryptos! Can you do better? Prizes worth 15K!!!', link: 'http://kryptos.excelmec.org', name: "Kryptos", picture: "http://174.36.220.83/kryptos/img/kp_img.jpg"});*/
+                            FB.api('/me/feed', 'post', {
+                                message: "I Just unlocked Level 2 of Kryptos! Can you do better? Prizes worth 15K!!!\nStart Playing Now!\nhttp://kryptos.excelmec.org/",
+                                name: "Kryptos 2015",
+                            });
                             window.location.replace('validate.php');
                         }
                     },
