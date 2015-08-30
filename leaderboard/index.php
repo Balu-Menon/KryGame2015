@@ -33,7 +33,7 @@ $_SESSION['leader']=rand(1,48);
                 $("#galScroll").niceScroll({
                     scrollspeed: 75,
                     mousescrollstep: 40,
-                    zindex: 70001,
+                    zindex: 200,
                     hidecursordelay: 400,
                     cursoropacitymin: 0.4,
                     cursoropacitymax: 0.9,
