@@ -1,7 +1,7 @@
 <?php
     ini_set('session.bug_compat_42',0);
 	ini_set('session.bug_compat_warn',0);
-	$host="127.0.0.1";
+	$host="localhost";
 
     $db_username="root";
 	$db_password=""; 
