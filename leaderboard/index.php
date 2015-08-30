@@ -66,7 +66,7 @@ $_SESSION['leader']=rand(1,48);
                 <div class="cd-gallery cd-container" id="galScroll">
                     <?php
                         require '../config.php';
-                        $sql="SELECT fbid,levelid from $usertable2 where nigger <> 1 AND levelid > 1 order by levelid desc,time asc";
+                        $sql="SELECT fbid,levelid from $usertable2 where nigger <> 1 AND levelid > 0 order by levelid desc,time asc";
                         $recset=mysql_query($sql) or die("There is some technical error");
                         $i=0;
                         while($row=mysql_fetch_array($recset)) {
