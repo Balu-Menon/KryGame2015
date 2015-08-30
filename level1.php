@@ -30,6 +30,7 @@
     <script src="js/modernizr.custom.js"></script>
     <script src="//use.typekit.net/czo0wjz.js"></script>
     <script>try{Typekit.load();}catch(e){}</script>
+    <script src="js/facebook.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 </head>
 <body>
@@ -38,7 +39,6 @@
             $("#loadingpage").css("display","none");
         });
     </script>
-    <script type="text/javascript" src="js/facebook.js"></script>
     <div id="loadingpage" style="display:visible; position:absolute; left:0%; top:0%; z-index:1000; background-color:white;  height:100%; width:100%;">
         <img src="img/loader.gif" style="position:relative;display:block;  top:35%; margin-left:auto; margin-right:auto;">
     </div>

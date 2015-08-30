@@ -27,10 +27,10 @@
     <link rel="stylesheet" href="css/font_base64-0.css" type="text/css" media="all" />
     <link rel="stylesheet" type="text/css" href="css/component.css" />
     <script src="js/modernizr.custom.js"></script>
+    <script src="js/facebook.js"></script>
     <script src="//use.typekit.net/czo0wjz.js"></script>
     <script>try{Typekit.load();}catch(e){}</script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-    <script src="js/facebook.js"></script>
 </head>
 <body>
     <script type="text/javascript">
