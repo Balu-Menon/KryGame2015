@@ -64,7 +64,7 @@
                     <li class="nav-link"><a href="index.html">Home</a></li>
                     <!--li class="nav-link"><a href="battlegrounds.php">Battle Grounds</a></li-->
                     <li class="nav-link"><a href="rules.php">War Rules</a></li>
-                    <li class="nav-link"><a href="leaderboard/">Heroes' Journeys</a></li>
+                    <li class="nav-link"><a href="leaderboard/">Leaderboard</a></li>
                     <li class="nav-link"><a href="contact.php">Contact Us</a></li>
                     <li class="nav-link"><a href="https://www.facebook.com/thekryptosmec" target="_blank">Our Community</a></li>
                 </ul>
@@ -108,7 +108,7 @@
                     <figure>
                         <img class="size-small aligncenter" src="img/Aishu.jpg"  width="150px" height="150px">                   
                     </figure>
-                    <p> AISHWARYA ASHOKKUMAR<br>+918129130866<br>aishwarya11235@gmail.com</p>                  
+                    <p> AIShWARYA ASHOKKUMAR<br>+918129130866<br>aishwarya11235@gmail.com</p>                  
                     <figure>
                         <img class="size-small alignright" src="img/alan.jpg"  width="150px" height="150px">           
                     </figure>

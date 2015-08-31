@@ -62,7 +62,7 @@
                 <div>
                     <div id="quest">
                     </div>
-                    <!--Rexy-->
+                    <!--Corniun-->
                     <form>
                         <input type='text' id="answer" placeholder='Answer here...' autocomplete="off">
                     </form>

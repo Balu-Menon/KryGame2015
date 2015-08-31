@@ -136,7 +136,7 @@
         $(window).load(function(){
             //var modal3 = document.getElementById("meme");
             var modal8 = document.getElementById("meme");
-            $("#quest").load("quests/78aa681eacda943958c2719d4c954382.txt");        
+            $("#quest").load("quests/798fd8635587a021c65f1bffaa285a2b.txt");        
             $("#submitter").click(function(){
                 var answer=document.getElementById("answer").value;
                 var values="answer="+answer;
@@ -145,6 +145,7 @@
                     url: 'ans.php',
                     data: values,
                     success: function(data, status){
+                        console.log(data);
                         var obj=JSON.parse(data);
                         
                         if(obj.resp=="563b9ab8b16c5c96be563348975b9783")

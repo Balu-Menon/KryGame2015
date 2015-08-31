@@ -1,3 +1,14 @@
+<?php
+	session_start();
+	ini_set('session.cookie_lifetime',  0);
+	if(!isset($_SESSION['usrno']) || $_SESSION['lev']!='toplevel/')
+	{
+		header('Location: ../error.php');
+	}
+	else 
+	{
+	?>
+
 <!DOCTYPE html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
@@ -74,3 +85,6 @@
     <script src="js/scripts.js" type="text/javascript"></script>
 </body>
 </html>
+<?php
+    }
+?>

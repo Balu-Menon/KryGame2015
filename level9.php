@@ -137,7 +137,7 @@
         $(window).load(function(){
             //var modal3 = document.getElementById("meme");
             var modal8 = document.getElementById("meme");
-            $("#quest").load("quests/78aa681eacda943958c2719d4c954382.txt");        
+            $("#quest").load("quests/a49092175d4517c40e4480327527a38e.txt");        
             $("#submitter").click(function(){
                 var answer=document.getElementById("answer").value;
                 var values="answer="+answer;
