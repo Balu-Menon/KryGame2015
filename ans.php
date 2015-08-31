@@ -92,6 +92,8 @@ else
 		 case 3:$ans="5214c64e451422e811f594f2fe1304eb";break;
          case 4:$ans="bddf312477c9583183bc591e918d7dc7";break; 
 	     case 5:$ans="7a13436395b20a3c9d4b907bcfe6970d";break;
+         case 6:$ans="982a1490cc74d8e7d98f3ae8046ec753";break; 
+	     case 7:$ans="78aa681eacda943958c2719d4c954382";break;
     }
     
     if($ch_ans == $ans) {

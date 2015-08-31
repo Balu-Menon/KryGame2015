@@ -1,9 +1,8 @@
 <?php
 	session_start();
 	ini_set('session.cookie_lifetime',  0);
-    require_once 'authen.php';
 
-	if(!isset($_SESSION['usrno']) || $_SESSION['lev']!='level1.php')
+	if(!isset($_SESSION['usrno']) || $_SESSION['lev']!='level8.php')
 	{
 		header('Location:validate.php');
 	}
@@ -16,7 +15,7 @@
 <head>
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title>Level 1 | Kryptos</title>
+	<title>Leve 8 | Kryptos</title>
     <meta name="description" content="Kryptos is an online Treasure hunt which is the best of its kind. Varied levels with puzzles, clues, cryptograohy, hacking is to be done for a true sherlock to win this game of Treasure hunt. Google and Wikipedia will help you to win this quest to win the bounty and find the treasure." />
     <meta name="keywords" content="excelmec, excel, mec, excel2015, 2015, online treasure hunt,online games, techfest, souoth india, kerala, cochin, model engineering college, model, engineering college, college, academy, engineering, electronics, computer science, electrical, biomedical, bio-medical, technology, inspire, innovate, biggest, technical, symposium"/>
     <link rel="icon" type="image/png" href="img/img.png" />
@@ -30,13 +29,9 @@
     <script src="js/modernizr.custom.js"></script>
     <script src="//use.typekit.net/czo0wjz.js"></script>
     <script>try{Typekit.load();}catch(e){}</script>
-    <script src="js/facebook.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 </head>
 <body>
-    <script type="text/javascript">
-        
-    </script>
     <script type="text/javascript">
         $(window).load(function(){
             $("#loadingpage").css("display","none");
@@ -65,9 +60,7 @@
             <section class='input'>
                 <div>
                     <div id="quest">
-                        <h2 style="color:#1C1C1C;padding-top:7%;">The Nuance Of Iqlusion</h2>
                     </div>
-                    <!--CREATORs-->
                     <form>
                         <input type='text' id="answer" placeholder='Answer here...' autocomplete="off">
                     </form>
@@ -143,6 +136,7 @@
         $(window).load(function(){
             //var modal3 = document.getElementById("meme");
             var modal8 = document.getElementById("meme");
+            $("#quest").load("quests/78aa681eacda943958c2719d4c954382.txt");        
             $("#submitter").click(function(){
                 var answer=document.getElementById("answer").value;
                 var values="answer="+answer;
@@ -151,8 +145,8 @@
                     url: 'ans.php',
                     data: values,
                     success: function(data, status){
-                        console.log(data);
-                        var obj=JSON.parse(data);                        
+                        var obj=JSON.parse(data);
+                        
                         if(obj.resp=="563b9ab8b16c5c96be563348975b9783")
                         {
                             var wrongans=["Bad Luck Dude....","are you KIDDING ME...","You deserve a medal 4 tat one...","Go Sleep...","Are you desperate???","No comments...","Try Harder next time...","So smart..."];
@@ -169,7 +163,7 @@
                         else
                         {
                             FB.api('/me/feed', 'post', {
-                                message: "I Just unlocked Level 1 of Kryptos! Can you do better? Prizes worth 15K!!!\nStart Playing Now!\nhttp://kryptos.excelmec.org/",
+                                message: "I Just unlocked Level 8 of Kryptos! Can you do better? Prizes worth 15K!!!\nStart Playing Now!\nhttp://kryptos.excelmec.org/",
                                 name: "Kryptos 2015",
                             });
                             window.location.replace('validate.php');
@@ -200,4 +194,4 @@
     <script src="js/css-filters-polyfill.js"></script>
 </body> 
 </html>
-<?php  } ?>
+<?php } ?>

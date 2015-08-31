@@ -27,6 +27,7 @@ if($dif<=0)
         <script src="js/modernizr.custom.js"></script>
         <script src="//use.typekit.net/czo0wjz.js"></script>
         <script>try{Typekit.load();}catch(e){}</script>
+        <link rel="stylesheet" href="css/login_form.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/hme.css">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
@@ -61,7 +62,7 @@ if($dif<=0)
                         <li class="nav-link"><a href="index.html">Home</a></li>
                         <!--li class="nav-link"><a href="battlegrounds.php">Battle Grounds</a></li-->
                         <li class="nav-link"><a href="rules.php">War Rules</a></li>
-                        <li class="nav-link"><a href="leaderboard/">Heroes' Journeys</a></li>
+                        <li class="nav-link"><a href="leaderboard/">Leaderboard</a></li>
                         <li class="nav-link"><a href="contact.php">Contact Us</a></li>
                         <li class="nav-link"><a href="https://www.facebook.com/thekryptosmec" target="_blank">Our Community</a></li>
                     </ul>
@@ -72,9 +73,9 @@ if($dif<=0)
         <div class="content">
             <a id="fblogin" onclick="fb_login();">Login with facebook</a>
         </div>
-        <a href="#"><img id="kryptos-logo" src="img/krylogo.png"></a>
-        <a href="#"><img id="clg-logo" src="img/mec_logo.png"></a>
-        <a href="#"><img id="excel-logo" src="img/excel_ribbon.png"></a>
+        <a href="http://kryptos.excelmec.org/" target="_blank"><img id="kryptos-logo" src="img/krylogo.png"></a>
+        <a href="http://mec.ac.in/" target="_blank"><img id="clg-logo" src="img/mec_logo.png"></a>
+        <a href="http://excelmec.org/excel2015/" target="_blank"><img id="excel-logo" src="img/excel_ribbon.png"></a>
         <!--social-->
         <div class="social">
             <a href="https://www.facebook.com/excelmec" target="_blank" id="soc1" alt="facebook"></a>
