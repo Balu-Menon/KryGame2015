@@ -107,7 +107,7 @@ $_SESSION['leader']=rand(1,48);
                                 echo "</div>";
                             $i++;
                         }
-                    if($i%4!=3) 
+                    if($i%4!=1) 
                         echo "</div>";
                     ?>
                 </div> <!-- cd-gallery -->
