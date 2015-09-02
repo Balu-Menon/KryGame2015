@@ -9,6 +9,8 @@ $level=null;
 if(isset($_POST["EMAIL"])){
 	
 	$email=$_POST["EMAIL"];
+	$email=stripslashes($email);
+	$email=mysql_real_escape_string($email);
 	$query=mysql_query("SELECT * FROM $usertable WHERE EMAIL='$email'",$connection);
     $arr=mysql_fetch_assoc($query);
     $firstname=$arr["FIRSTNAME"];

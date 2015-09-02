@@ -25,9 +25,9 @@
     <body>
         <div id="main-section" class="section">
         </div>
-        <a href="#"><img id="kryptos-logo" src=""></a>
-        <a href="#"><img id="clg-logo" src="img/mec_logo.png"></a>
-        <a href="#"><img id="excel-logo" src="img/excel_ribbon.png"></a>
+        <a href="http://mec.ac.in/" target="_blank"><img id="clg-logo" src="img/mec_logo.png"></a>
+        <a href="http://excelmec.org/excel2015/" target="_blank"><img id="excel-logo" src="img/logo-mec.png"></a>
+        <a href="https://mistlayer.com/" target="_blank"><img id="mist-logo" src="img/ml_2.png"></a>
         <!--social-->
         <div class="social">
             <a href="https://www.facebook.com/excelmec" target="_blank" id="soc1" alt="facebook"></a>

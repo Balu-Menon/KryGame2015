@@ -297,14 +297,20 @@ p{
 
 #clg-logo {
     margin-top:-65px;
-    width: 200px;
+    width: 180px;
     margin-right: 20px;
     float: right;
 }
 
 #excel-logo {
-    margin-top:-75px;
-    width: 200px;
-    margin-left: 20px;
+    margin-top:-85px;
+    width: 220px;
+    margin-left: 5px;
     float: left;
+}
+
+#mist-logo {
+    width: 200px;
+    margin-left: 10px;
+    float: right;
 }

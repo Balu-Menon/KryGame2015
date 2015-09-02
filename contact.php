@@ -31,7 +31,7 @@
             $("#wr").niceScroll({
                 scrollspeed: 75,
                 mousescrollstep: 40,
-                zindex: 70001,
+                zindex: 500,
                 hidecursordelay: 400,
                 cursoropacitymin: 0.4,
                 cursoropacitymax: 0.9,
@@ -76,7 +76,8 @@
 
      
     <a href="#"><img id="clg-logo" src="img/mec_logo.png"></a>
-    <a href="#"><img id="excel-logo" src="img/excel_ribbon.png"></a>
+    <a href="http://excelmec.org/excel2015/" target="_blank"><img id="excel-logo" src="img/logo-mec.png"></a>
+    <a href="https://mistlayer.com/" target="_blank"><img id="mist-logo" src="img/ml_2.png"></a>
      
     <!--social-->
     <div class="social">
@@ -108,7 +109,7 @@
                     <figure>
                         <img class="size-small aligncenter" src="img/Aishu.jpg"  width="150px" height="150px">                   
                     </figure>
-                    <p> AIShWARYA ASHOKKUMAR<br>+918129130866<br>aishwarya11235@gmail.com</p>                  
+                    <p> AISHWARYA ASHOK KUMAR<br>+918129130866<br>aishwarya11235@gmail.com</p>                  
                     <figure>
                         <img class="size-small alignright" src="img/alan.jpg"  width="150px" height="150px">           
                     </figure>

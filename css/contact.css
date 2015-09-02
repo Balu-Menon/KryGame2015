@@ -1,5 +1,4 @@
-
-     #wr {
+#wr {
     font-family: "trajan-pro-3-600",serif;
     background-color: rgba(0, 0, 0, 0.6);
     width: 63%;
@@ -10,48 +9,32 @@
     overflow:auto;
     border-radius: 4px;
     height: 80%;
-   
-    
 }
+
 #hc {
     text-align: center;
     font-size: 25px;           
 }
+
 #rl{
- font-size: 13px;
+    font-size: 13px;
 }
+
 #p {
     padding-left: 10px;
     font-size: 10px;
 }  
-     #lft{
-    
-     margin-left:3%;
-     }
-    #cnt{
-       margin-top: -85.5%;
-        margin-left:35%;
-    }
+
+#lft{
+    margin-left:3%;
+}
+
+#cnt{
+    margin-top: -85.5%;
+    margin-left:35%;
+}
        
-     #rht{ 
-     margin-top: -83%;
-     margin-left:69%;
-     }
-    
- wr::webkit-scrollbar-track
-         {
-             -webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.3);
-             border-radius: 10px;
-             background-color: #F5F5F5;
-         }
-    wr::webkit-scrollbar
-         {
-             width:12px;
-             background-color: #F5F5F5;
-         }
-    wr::webkit-scrollbar-thumb
-         {
-             border-radius: 10px;
-             -webkit-box-shadow:0 0 6px rgba(0,0,0,.3);
-             background-color: #D62929;
-         }
+#rht{ 
+    margin-top: -83%;
+    margin-left:69%;
+}

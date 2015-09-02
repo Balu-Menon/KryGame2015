@@ -53,17 +53,24 @@ body {
 }
 
 #clg-logo {
-    margin-top:-35px;
-    width: 200px;
-    margin-right: 20px;
+    margin-top:-15px;
+    width: 170px;
+    margin-right: 15px;
     float: right;
 }
 
 #excel-logo {
-    margin-top:-60px;
-    width: 200px;
-    margin-left: 20px;
+    margin-top:-38px;
+    width: 220px;
+    margin-left: 5px;
     float: left;
+}
+
+#mist-logo {
+    margin-top:-85px;
+    width: 170px;
+    margin-right: -170px;
+    float: right;
 }
 
 #kryptos-logo {

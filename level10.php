@@ -1,9 +1,8 @@
 <?php
 	session_start();
 	ini_set('session.cookie_lifetime',  0);
-    require_once 'authen.php';
 
-	if(!isset($_SESSION['usrno']) || $_SESSION['lev']!='level9.php')
+	if(!isset($_SESSION['usrno']) || $_SESSION['lev']!='level10.php')
 	{
 		header('Location:validate.php');
 	}
@@ -16,7 +15,7 @@
 <head>
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title>Leve 9 | Kryptos</title>
+	<title>Level 10 | Kryptos</title>
     <meta name="description" content="Kryptos is an online Treasure hunt which is the best of its kind. Varied levels with puzzles, clues, cryptograohy, hacking is to be done for a true sherlock to win this game of Treasure hunt. Google and Wikipedia will help you to win this quest to win the bounty and find the treasure." />
     <meta name="keywords" content="excelmec, excel, mec, excel2015, 2015, online treasure hunt,online games, techfest, souoth india, kerala, cochin, model engineering college, model, engineering college, college, academy, engineering, electronics, computer science, electrical, biomedical, bio-medical, technology, inspire, innovate, biggest, technical, symposium"/>
     <link rel="icon" type="image/png" href="img/img.png" />
@@ -138,7 +137,7 @@
         $(window).load(function(){
             //var modal3 = document.getElementById("meme");
             var modal8 = document.getElementById("meme");
-            $("#quest").load("quests/a49092175d4517c40e4480327527a38e.txt");        
+            $("#quest").load("quests/5eff0d3c3a6752f22a083217e24954a7.txt");        
             $("#submitter").click(function(){
                 var answer=document.getElementById("answer").value;
                 var values="answer="+answer;
@@ -165,7 +164,7 @@
                         else
                         {
                             FB.api('/me/feed', 'post', {
-                                message: "I Just unlocked Level 9 of Kryptos! Can you do better? Prizes worth 15K!!!\nStart Playing Now!\nhttp://kryptos.excelmec.org/",
+                                message: "I Just unlocked Level 10 of Kryptos! Can you do better? Prizes worth 15K!!!\nStart Playing Now!\nhttp://kryptos.excelmec.org/",
                                 name: "Kryptos 2015",
                             });
                             window.location.replace('validate.php');

@@ -335,16 +335,23 @@ canvas{
 }
 
 #excel-logo {
-    margin-top:-125px;
-    width: 200px;
-    margin-left: 20px;
+    margin-top:-105px;
+    width: 220px;
+    margin-left: 5px;
     float: left;
 }
 
+#mist-logo {
+    margin-top:-145px;
+    width: 170px;
+    margin-right: 13px;
+    float: right;
+}
+
 #clg-logo {
-    margin-top:-100px;
-    width: 200px;
-    margin-right: 20px;
+    margin-top:-80px;
+    width: 170px;
+    margin-right: 13px;
     float: right;
 }
 

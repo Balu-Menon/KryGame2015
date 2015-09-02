@@ -1,6 +1,6 @@
 <?php
 
-if($_POST["password"]=="") {
+if(empty($_POST["password"])) {
    echo "password not entered";
 }
 

@@ -33,7 +33,7 @@ $_SESSION['leader']=rand(1,48);
                 $("#galScroll").niceScroll({
                     scrollspeed: 75,
                     mousescrollstep: 40,
-                    zindex: 70001,
+                    zindex: 500,
                     hidecursordelay: 400,
                     cursoropacitymin: 0.4,
                     cursoropacitymax: 0.9,
@@ -101,8 +101,9 @@ $_SESSION['leader']=rand(1,48);
                 </div> <!-- cd-gallery -->
             </div> <!-- cd-gallery-container -->
         </div>
-        <a href="#"><img id="clg-logo" src="../img/mec_logo.png"></a>
-        <a href="#"><img id="excel-logo" src="../img/excel_ribbon.png"></a>
+        <a href="http://mec.ac.in/"><img id="clg-logo" src="../img/mec_logo.png"></a>
+        <a href="http://excelmec.org/excel2015/" target="_blank"><img id="excel-logo" src="../img/logo-mec.png"></a>
+        <a href="https://mistlayer.com/" target="_blank"><img id="mist-logo" src="../img/ml_2.png"></a>
         <!--social-->
         <div class="social">
             <a href="https://www.facebook.com/excelmec" target="_blank" id="soc1" alt="facebook"></a>

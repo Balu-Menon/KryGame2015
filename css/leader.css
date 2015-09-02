@@ -524,17 +524,24 @@ font-family: 'Amatic SC', cursive;
 
 
 #clg-logo {
-    margin-top:-35px;
-    width: 150px;
-    margin-right: 20px;
+    margin-top:-38px;
+    width: 170px;
+    margin-right: 12px;
     float: right;
 }
 
 #excel-logo {
-    margin-top:-60px;
-    width: 150px;
-    margin-left: 20px;
+    margin-top:-70px;
+    width: 220px;
+    margin-left: 5px;
     float: left;
+}
+
+#mist-logo {
+    margin-top:-105px;
+    width: 170px;
+    margin-right: -170px;
+    float: right;
 }
 
 

@@ -33,8 +33,8 @@
 
 </head>
 <body>
-    <a href="#"><img id="clg-logo" src="img/mec_logo.png"></a>
-    <a href="#"><img id="excel-logo" src="img/excel_ribbon.png"></a>
+    <a href="http://mec.ac.in/" target="_blank"><img id="clg-logo" src="img/mec_logo.png"></a>
+    <a href="http://excelmec.org/excel2015/" target="_blank"><img id="excel-logo" src="../img/logo-mec.png"></a>
     <div class="animationload">
         <div class="loader"></div>
     </div>
@@ -77,6 +77,7 @@
             </div>
         </div>
     </footer>
+    <a href="https://mistlayer.com/" target="_blank"><img id="mist-logo" src="../img/ml_2.png"></a>
     <script src="js/jquery-1.11.2.min.js" type="text/javascript"></script>
     <script src="js/bootstrap.min.js" type="text/javascript"></script>
     <script src="js/modernizr.custom.js" type="text/javascript"></script>

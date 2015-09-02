@@ -1,6 +1,6 @@
 <?php
 
-if($_POST["password"]=="") {
+if(empty($_POST["password"])) {
    echo "password not entered";
 }
 
@@ -12,6 +12,12 @@ else{
 		$id=$_POST['ID'];
 		$ans=$_POST['ANSWER'];
         $url=$_POST['URL'];
+		$id = stripslashes($id);
+        $ans = stripslashes($ans);
+        $url = stripslashes($url);
+        $id = mysql_real_escape_string($id);
+        $ans = mysql_real_escape_string($ans);
+        $url = mysql_real_escape_string($url);
 		$query=mysql_query("SELECT * FROM $kryptostable WHERE ID='$id'",$connection);
 		$no=mysql_num_rows($query);
 		if($no>=1) {
