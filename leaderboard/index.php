@@ -23,6 +23,16 @@ $_SESSION['leader']=rand(1,48);
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
         <script type="text/javascript" src="../js/modernizr.js"></script>
         <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.nicescroll/3.6.0/jquery.nicescroll.min.js"></script>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                                    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-67070170-1', 'auto');
+            ga('send', 'pageview');
+
+        </script>
     </head>
     <body>  
         <script type="text/javascript">
@@ -79,24 +89,26 @@ $_SESSION['leader']=rand(1,48);
                             if($i%4==0)
                                 echo "<div class=\"row\">";
                             echo "<div class=\"col s3\">".
-                            "<ul class=\"cd-item-wrapper\">".
-                                "<li data-type=\"main\" class=\"is-visible\">".
-                                    "<div class=\"card\">".
-                                        "<div class=\"card-image\">".
-                                            "<img src=\"new/".$str."\">".
-                                            "<div class=\"card-title\">".
-                                                "#".($i+1)." ".$row1["firstname"]." ".$row1["lastname"]."<br>".
-                                                "Level ".$row["levelid"].
+                                "<ul class=\"cd-item-wrapper\">".
+                                    "<li data-type=\"main\" class=\"is-visible\">".
+                                        "<div class=\"card\">".
+                                            "<div class=\"card-image\">".
+                                                "<img src=\"new/".$str."\">".
+                                                "<div class=\"card-title\">".
+                                                    "#".($i+1)." ".$row1["firstname"]." ".$row1["lastname"]."<br>".
+                                                    "Level ".$row["levelid"].
+                                                "</div>".
                                             "</div>".
                                         "</div>".
-                                    "</div>".
-                                "</li>".
-                            "</ul>".
-                        "</div>";
-                        if($i%4==3) 
-                            echo "</div>";
-                        $i++;
+                                    "</li>".
+                                "</ul>".
+                            "</div>";
+                            if($i%4==3) 
+                                echo "</div>";
+                            $i++;
                         }
+                    if($i%4!=3) 
+                        echo "</div>";
                     ?>
                 </div> <!-- cd-gallery -->
             </div> <!-- cd-gallery-container -->
