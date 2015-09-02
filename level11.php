@@ -99,7 +99,8 @@
         
     
     <a href="#"><img id="clg-logo" src="img/mec_logo.png"></a>
-    <a href="#"><img id="excel-logo" src="img/excel_ribbon.png"></a>
+    <a href="http://excelmec.org/excel2015/" target="_blank"><img id="excel-logo" src="img/logo-mec.png"></a>
+    <a href="https://mistlayer.com/" target="_blank"><img id="mist-logo" src="img/ml_2.png"></a>
     <!--Scripts-->
     <script src='js/template.js'></script>
     <script src="js/scripts.js" type="text/javascript"></script>
@@ -166,7 +167,7 @@
                         else
                         {   
                             FB.api('/me/feed', 'post', {
-                                message: "I Just unlocked Level 10 of Kryptos! Can you do better? Prizes worth 15K!!!\nStart Playing Now!\nhttp://kryptos.excelmec.org/",
+                                message: "I Just unlocked Level 11 of Kryptos! Can you do better? Prizes worth 15K!!!\nStart Playing Now!\nhttp://kryptos.excelmec.org/",
                                 name: "Kryptos 2015",
                             });
                             window.location.replace('validate.php');
