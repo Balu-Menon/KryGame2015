@@ -71,7 +71,6 @@
                 <div>
                     <div id="quest">
                     </div>
-                    <!-- http://174.36.220.83/kryptos/sms.mp3 -->
                     <form>
                         <input type='text' id="answer" placeholder='Answer here...' autocomplete="off">
                     </form>

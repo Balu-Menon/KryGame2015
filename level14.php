@@ -71,7 +71,6 @@
                 <div>
                     <div id="quest">
                     </div>
-                    <!--51.5008n, 0.1247w-->
                     <form>
                         <input type='text' id="answer" placeholder='Answer here...' autocomplete="off">
                     </form>
