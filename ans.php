@@ -62,33 +62,44 @@ if($user_id) {
     /* SQl injection removal deploying basic counter measure..... */
 
     $ch_ans=stripslashes($ch_ans);
-    $ch_ans= mysql_real_escape_string($ch_ans,$connection);
+    $ch_ans= mysql_real_escape_string($ch_ans);
     //$ch_ans=$_POST['answer']; remove comment  wen encryption not given
     
-    date_default_timezone_set('Asia/Calcutta');
-    if(!isset($_SESSION['attempt']) || !isset($_SESSION['strtime'])) {
-        $_SESSION['attempt']=0;
-        $_SESSION['strtime']=TIME();
-    }
-    $_SESSION['attempt']=$_SESSION['attempt']+1;
-    $_SESSION['endtime']=TIME();
-    $timediff=$_SESSION['endtime']-$_SESSION['strtime'];
-    if($timediff>=60 || $_SESSION['attempt']>=$maxrate) {
-        if($_SESSION['attempt']>=$maxrate) {
-            // $code_filename="answers/assholesX.txt";
-            // $codefileopen=fopen($code_filename,"a") or die("can't open flog file");
-            // $code=$unixtime."->".$_SESSION['username']."->".$_SESSION['attempt']."\n";
-            // fwrite($codefileopen, $code);
-            // fclose($codefileopen);
-            $s="update $usertable set nigger=1 where fbid='".$user."'";
-            mysql_query($s) or die("There is some technical ferror3");
-            die("contact us");
-        }
+   $brute="SELECT * FROM  $attacktable where FBID='".$user."'";
+   $attackresult=mysql_query($brute) or die("There is some technical error2");
+   $attackrow = mysql_fetch_assoc($attackresult);
+   $attackval = $attackrow["lev".$curlev]-1;
+
+
+
+   date_default_timezone_set('Asia/Calcutta');
+   if(!isset($_SESSION['attempt']) || !isset($_SESSION['strtime'])){
+	    $_SESSION['attempt']=0;
+		$_SESSION['strtime']=TIME();
+	}
+	$_SESSION['attempt']=$_SESSION['attempt']+1;
+	$_SESSION['endtime']=TIME();
+	$timediff=$_SESSION['endtime']-$_SESSION['strtime'];
+	if($timediff>=60 || $_SESSION['attempt']>=$maxrate) {
+		
+		if($_SESSION['attempt']>=$maxrate) {
+			$s=mysql_query("UPDATE $usertable2 set NIGGER=1 where FBID='".$user."'");
+		
+		}
         else {
-            $_SESSION['strtime']=TIME();
-            $_SESSION['attempt']=0;
-        }
-    }   
+			
+			$_SESSION['strtime']=TIME();
+			$_SESSION['attempt']=0;
+		}
+}
+
+
+
+
+	$brute="UPDATE $attacktable set lev".$curlev."=".$attackval." where FBID='".$user."'";
+	mysql_query($brute) or die("There is some technical error3".$curlev);
+
+   
     switch($curlev) {
         case 1:$ans="dc2748e015b89dc97ab3d15b2eefc4b4";break;
         case 2:$ans="634bc62faf2314b42785108deea63eb8";break;         

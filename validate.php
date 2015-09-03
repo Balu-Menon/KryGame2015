@@ -16,23 +16,19 @@ $dif=$dest-TIME();
 if(!isset($_SESSION['usrno']))
 {
 	session_destroy();
- header('Location: game.php');
+    header('Location: game.php');
 }
 else 
 {
 $fbid=$_SESSION['usrno'];
 $sql1="SELECT * FROM $usertable2 WHERE FBID='$fbid'";
-$result1=mysql_query($sql1,$connection);
+$result1=mysql_query($sql1);
 $count=mysql_fetch_assoc($result1);
 $i=$count['RAN1'];
 $level=$count['LEVELID'];
-$_SESSION['level']=$level.(($level==8)?(chr(ord('a')+$i%2)):'');
-if($_SESSION['level']==68)
-{
-	$_SESSION['level68']=$i;
-}
+
 $sql1="SELECT * FROM $kryptostable WHERE ID ='$level'";
-$result1=mysql_query($sql1,$connection);
+$result1=mysql_query($sql1);
 
 $count1=mysql_fetch_assoc($result1);
 $_SESSION['lev']=$count1['URL'];

@@ -15,11 +15,10 @@
 	
 	$kryptostable = "kryquest";
 	$usertable = "usertable";
-	$attacktable = "attacklog";
+	$attacktable = "attacktable";
 	$usertable2 = "userstatus";
-	$logintable = "logintable";
 	$answerlog = "anslog";
-    $maxrate = 30;
+    $maxrate =60;
 	
 	
 ?>
