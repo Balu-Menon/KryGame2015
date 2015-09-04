@@ -372,7 +372,7 @@ function playerDead()
                else
                {
                    FB.api('/me/feed', 'post', {
-                       message: "I Just unlocked Level 17 of Kryptos! Can you do better? Prizes worth 15K!!!\nStart Playing Now!\nhttp://kryptos.excelmec.org/",
+                       message: "I Just unlocked Level 20 of Kryptos! Can you do better? Prizes worth 15K!!!\nStart Playing Now!\nhttp://kryptos.excelmec.org/",
                        name: "Kryptos 2015",
                    });
                    window.location.replace('validate.php');

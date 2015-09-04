@@ -3,7 +3,7 @@
 	session_start();
 	ini_set('session.cookie_lifetime',  0);
     
-	if(!isset($_SESSION['usrno']) || $_SESSION['lev']!='level17.php')
+	if(!isset($_SESSION['usrno']) || $_SESSION['lev']!='level20.php')
 	{
 		header('Location:validate.php');
 	}
@@ -52,7 +52,6 @@
       </div>
       <div class="boundingbox" id="playerbox"></div>
       <div class="boundingbox" id="pipebox"></div>
-      <!--30-->
       <script src="js/jquery.min.js"></script>
       <script src="js/jquery.transit.min.js"></script>
       <script src="js/buzz.min.js"></script>
