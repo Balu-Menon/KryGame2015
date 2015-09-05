@@ -18,6 +18,7 @@
       <!-- Style sheets -->
       <link href="css/reset.css" rel="stylesheet">
       <link href="css/main.css" rel="stylesheet">
+       <script src="../js/facebook.js"></script>
    </head>
    <body>
       <div id="gamecontainer">
