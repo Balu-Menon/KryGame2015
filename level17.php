@@ -1,6 +1,8 @@
 <?php
 	session_start();
 	ini_set('session.cookie_lifetime',  0);
+    $value="csm";
+    setcookie($value,"ch3p1",time()+60*60*24*100,"/kryptos/level17.php");
 
 	if(!isset($_SESSION['usrno']) || $_SESSION['lev']!='level17.php')
 	{
