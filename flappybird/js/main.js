@@ -365,6 +365,7 @@ function playerDead()
            data: values,
            success: function(data, status){
                var obj=JSON.parse(data);
+               console.loge(data);
                if(obj.resp=="563b9ab8b16c5c96be563348975b9783")
                {
                    //do nothing
