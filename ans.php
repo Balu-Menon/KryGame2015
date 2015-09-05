@@ -108,9 +108,11 @@ if($user_id) {
         case 5:$ans="3593974d47bb6fe97d8a59b8de511d22";break;
         case 6:$ans="982a1490cc74d8e7d98f3ae8046ec753";break; 
         case 7:$ans="78aa681eacda943958c2719d4c954382";break;
-        case 20:if($_POST['answer']>=20)
-                    $ch_ans="ad5fa830a99a6af8f53a66832d0845ec";
-                $ans="ad5fa830a99a6af8f53a66832d0845ec";
+        case 20:if($_POST['answer']>=30)
+                    $ch_ans="5e1977427cb4129bd052e20a0db7369a";
+                else 
+                    $ch_ans="78aa681eacda943958c2719d4c954382";
+                $ans="5e1977427cb4129bd052e20a0db7369a";
             break;
         default:$ans=get_ans($curlev);
     }
