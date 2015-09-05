@@ -1,12 +1,12 @@
 <?php
 	session_start();
 	ini_set('session.cookie_lifetime',  0);
-    
+
 	if(!isset($_SESSION['usrno']) || $_SESSION['lev']!='level17.php')
 	{
 		header('Location:validate.php');
 	}
-	else 
+	else
 	{
 	?>
 
@@ -16,18 +16,20 @@
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<title>Level 17 | Kryptos</title>
-    <link rel="icon" type="image/png" href="img/img.png" />
     <meta name="description" content="Kryptos is an online Treasure hunt which is the best of its kind. Varied levels with puzzles, clues, cryptograohy, hacking is to be done for a true sherlock to win this game of Treasure hunt. Google and Wikipedia will help you to win this quest to win the bounty and find the treasure." />
     <meta name="keywords" content="excelmec, excel, mec, excel2015, 2015, online treasure hunt,online games, techfest, souoth india, kerala, cochin, model engineering college, model, engineering college, college, academy, engineering, electronics, computer science, electrical, biomedical, bio-medical, technology, inspire, innovate, biggest, technical, symposium"/>
+    <link rel="icon" type="image/png" href="img/img.png" />
 	<link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="css/template.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/font_base64-0.css" type="text/css" media="all" />
     <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <script src="js/facebook.js"></script>
     <script src="js/modernizr.custom.js"></script>
     <script src="//use.typekit.net/czo0wjz.js"></script>
     <script>try{Typekit.load();}catch(e){}</script>
+    <script src="js/facebook.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -42,11 +44,13 @@
 </head>
 <body>
     <script type="text/javascript">
+        
+    </script>
+    <script type="text/javascript">
         $(window).load(function(){
             $("#loadingpage").css("display","none");
         });
     </script>
-    <script type="text/javascript" src="js/facebook.js"></script>
     <div id="loadingpage" style="display:visible; position:absolute; left:0%; top:0%; z-index:1000; background-color:white;  height:100%; width:100%;">
         <img src="img/loader.gif" style="position:relative;display:block;  top:35%; margin-left:auto; margin-right:auto;">
     </div>
@@ -70,7 +74,9 @@
             <section class='input'>
                 <div>
                     <div id="quest">
+                        <h3 style="color:#1C1C1C;padding-top:7%;">evrtaybseloepijioimrrppnkalpfgpweufuv<br>noahdiggniunzhgaswxzxdjhwpjbkbscwer<br>vzrjhfulhilsbzxzlrcpzobciuiohpvvaekmrgkal</h3>
                     </div>
+                    <!-- asdfgh -->
                     <form>
                         <input type='text' id="answer" placeholder='Answer here...' autocomplete="off">
                     </form>
@@ -146,21 +152,43 @@
         
         $(window).load(function(){
             //var modal3 = document.getElementById("meme");
-            $("#quest").load("quests/eeeb8028ddfb389978751dedd1d4192a.txt");
             var modal8 = document.getElementById("meme");
             $("#submitter").click(function(){
                 var answer=document.getElementById("answer").value;
                 var values="answer="+answer;
-                var wrongans=["Bad Luck Dude....","are you KIDDING ME...","You deserve a medal 4 tat one...","Go Sleep...","Are you desperate???","No comments...","Try Harder next time...","So smart..."];
-                var i=Math.floor(Math.random()*8);
-                var j=Math.floor(Math.random()*15);
-                var img="img/memes/meme"+j+".jpg";
-                $("#wrongcontent").text(wrongans[i]);
-                $("#wrongimg").attr("src",img);
-                setTimeout(function(){
-                    state=1;
-                    classie.toggle( modal8, 'md-show' );
-                },2000);
+                $.ajax({
+                    type:"POST",
+                    url: 'ans.php',
+                    data: values,
+                    success: function(data, status){
+                        console.log(data);
+                        var obj=JSON.parse(data);                        
+                        if(obj.resp=="563b9ab8b16c5c96be563348975b9783")
+                        {
+                            var wrongans=["Bad Luck Dude....","are you KIDDING ME...","You deserve a medal 4 tat one...","Go Sleep...","Are you desperate???","No comments...","Try Harder next time...","So smart..."];
+                            var i=Math.floor(Math.random()*8);
+                            var j=Math.floor(Math.random()*15);
+                            var img="img/memes/meme"+j+".jpg";
+                            $("#wrongcontent").text(wrongans[i]);
+                            $("#wrongimg").attr("src",img);
+                            setTimeout(function(){
+                                state=1;
+					            classie.toggle( modal8, 'md-show' );
+                            },2000);
+                        }
+                        else
+                        {
+                            FB.api('/me/feed', 'post', {
+                                message: "I Just unlocked Level 17 of Kryptos! Can you do better? Prizes worth 15K!!!\nStart Playing Now!\nhttp://kryptos.excelmec.org/",
+                                name: "Kryptos 2015",
+                            });
+                            window.location.replace('validate.php');
+                        }
+                    },
+                    error: function(){
+                        alert("There was an error in passing....please excuse us.");
+                    }
+                });
             });
         });
         $("#redirect").click(function(){
@@ -182,4 +210,4 @@
     <script src="js/css-filters-polyfill.js"></script>
 </body> 
 </html>
-<?php } ?>
+<?php  } ?>
