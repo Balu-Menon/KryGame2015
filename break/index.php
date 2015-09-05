@@ -1,3 +1,13 @@
+<?php
+	session_start();
+	ini_set('session.cookie_lifetime',  0);
+	if(!isset($_SESSION['usrno']) || $_SESSION['lev']!='break/')
+	{
+		header('Location: ../error.php');
+	}
+	else 
+	{
+	?>
 <!doctype html>
 <html class="no-js" lang="en">
     <head>
@@ -45,3 +55,6 @@
         </div>
     </body>
 </html>
+<?php
+    }
+?>
