@@ -1,0 +1,40 @@
+#wr {
+    font-family: "trajan-pro-3-600",serif;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 63%;
+    margin-left: 19%;
+    margin-top: -35%;
+    border: 2px solid rgb(79, 86, 98);
+    padding-top: 0%;     
+    overflow:auto;
+    border-radius: 4px;
+    height: 80%;
+}
+
+#hc {
+    text-align: center;
+    font-size: 25px;           
+}
+
+#rl{
+    font-size: 13px;
+}
+
+#p {
+    padding-left: 10px;
+    font-size: 10px;
+}  
+
+#lft{
+    margin-left:3%;
+}
+
+#cnt{
+    margin-top: -85.5%;
+    margin-left:35%;
+}
+       
+#rht{ 
+    margin-top: -83%;
+    margin-left:69%;
+}
