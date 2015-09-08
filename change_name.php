@@ -10,15 +10,15 @@ else {
 		$lastname=$_POST['lastname'];
 		$firstname=stripslashes($firstname);
 		$lastname=stripslashes($lastname);
-		$firstname=mysql_real_escape_string($firstname);
-		$lastname=mysql_real_escape_string($lastname);
+		//$firstname=mysql_real_escape_string($firstname);
+		//$lastname=mysql_real_escape_string($lastname);
 		if(empty($_POST['firstname']) && empty($_POST['lastname'])) {
 			die("please enter name.");
 		}
 		if(!empty($_POST['ID'])) {
 			$fbid=$_POST['ID'];
 			$fbid=stripslashes($fbid);
-			$fbid=mysql_real_escape_string($fbid);
+			//$fbid=mysql_real_escape_string($fbid);
 			$query=mysql_query("SELECT * FROM $usertable WHERE FBID='$fbid'");
 			$num=mysql_num_rows($query);
 			if($num==1){
@@ -34,7 +34,7 @@ else {
 		else if(!empty($_POST['MAILID'])) {
 			$mailid=$_POST['MAILID'];
 			$mailid=stripslashes($mailid);
-			$mailid=mysql_real_escape_string($mailid);
+			//$mailid=mysql_real_escape_string($mailid);
 			$query=mysql_query("SELECT * FROM $usertable WHERE EMAIL='$mailid'");
 			$num=mysql_num_rows($query);
 			if($num==1){
