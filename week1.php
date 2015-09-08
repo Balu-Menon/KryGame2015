@@ -19,7 +19,7 @@ if(isset($_SESSION['usrno'])) {
 		$count=mysql_fetch_assoc($result);
 		$_SESSION['lev']=$count['URL'];
 		$loc=$_SESSION['lev'];
-		header('Location:$loc');
+        header('Location:'.$loc);
 	}
 }
 else {

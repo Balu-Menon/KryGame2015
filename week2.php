@@ -16,7 +16,7 @@ if(isset($_SESSION['usrno'])) {
 		$count=mysql_fetch_assoc($result);
 		$_SESSION['lev']=$count['URL'];
 		$loc=$_SESSION['lev'];
-		header('Location:$loc');
+		header('Location:'.$loc);
 	}
 	else {
 		$sql="SELECT * FROM $kryptostable WHERE ID='$curlev'";
@@ -24,7 +24,7 @@ if(isset($_SESSION['usrno'])) {
 		$count=mysql_fetch_assoc($result);
 		$_SESSION['lev']=$count['URL'];
 		$loc=$_SESSION['lev'];
-		header('Location:$loc');
+		header('Location:'.$loc);
 	}
 	
 }

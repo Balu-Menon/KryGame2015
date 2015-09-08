@@ -11,8 +11,8 @@ else{
 	$pass=stripslashes($pass);
 	$id=stripslashes($id);
 	
-	$pass=mysql_real_escape_string($pass);
-	$id=mysql_real_escape_string($id);
+	//$pass=mysql_real_escape_string($pass);
+	//$id=mysql_real_escape_string($id);
 	
 	
 	if($pass!="#thegladiator124") {
@@ -24,7 +24,7 @@ else{
 		if(isset($_POST['select'])) {
 			$val=$_POST['select'];
 			$val=stripslashes($val);
-			$val=mysql_real_escape_string($val);
+			//$val=mysql_real_escape_string($val);
 			
 		}
 		else {
