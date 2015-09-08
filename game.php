@@ -19,6 +19,7 @@ if($dif<=0)
         <meta name="description" content="Kryptos is an online Treasure hunt which is the best of its kind. Varied levels with puzzles, clues, cryptograohy, hacking is to be done for a true sherlock to win this game of Treasure hunt. Google and Wikipedia will help you to win this quest to win the bounty and find the treasure." />
         <meta name="keywords" content="excelmec, excel, mec, excel2015, 2015, online treasure hunt,online games, techfest, souoth india, kerala, cochin, model engineering college, model, engineering college, college, academy, engineering, electronics, computer science, electrical, biomedical, bio-medical, technology, inspire, innovate, biggest, technical, symposium"/>
         <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
         <link rel="icon" type="image/png" href="img/img.png" />
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="css/normalize.min.css">
@@ -66,11 +67,15 @@ if($dif<=0)
         
         
         <div id="main-section" class="section">
+            <div id="sound">
+                <i class="fa fa-volume-up" id="sound_on" style="color:#f1f1f1;float:right;font-size:30px;padding: 15px 20px;display:block;"></i>
+                <i class="fa fa-volume-off" id="sound_off" style="color:#f1f1f1;float:right;font-size:30px;padding: 15px 20px;display:none;"></i>
+            </div>
             <nav>
                 <div id="main-nav" class="nav-area init-nav">
                     <ul>
                         <li class="nav-link"><a href="index.html">Home</a></li>
-                        <!--li class="nav-link"><a href="battlegrounds.php">Battle Grounds</a></li-->
+                        <li class="nav-link"><a href="battlegrounds.php">Battle Grounds</a></li>
                         <li class="nav-link"><a href="rules.php">War Rules</a></li>
                         <li class="nav-link"><a href="leaderboard/">Leaderboard</a></li>
                         <li class="nav-link"><a href="contact.php">Contact Us</a></li>
@@ -103,12 +108,26 @@ if($dif<=0)
             <div class="fb-like" data-href="https://www.facebook.com/excelmec" data-layout="box_count" data-action="like" data-show-faces="true" data-share="true" style="position:relative; height:40px; width:40px; top:0%; left:3%;"></div>
             
         </div>
-        </embed>
         <!--Scripts-->
         <script src="js/classie.js"></script>
         <script src="js/scripts.js" type="text/javascript"></script>
         <script src="js/main.js" type="text/javascript"></script>
         <script src="js/facebook.js" type="text/javascript"></script>
+        <audio loop="" autoplay="" class="audio">
+            <source src="music.mp3" type="audio/mpeg">
+        </audio>
+        <script>
+            var is_on=0,sound_off=0;
+            $('#sound').click(function(){
+                toggleMuteAudio();
+                $('#sound_on').toggle(200);
+                $('#sound_off').toggle(200);
+            });
+            
+            function toggleMuteAudio(){
+                $(".audio").prop("muted",!$(".audio").prop("muted"));
+            }
+        </script>
     </body>
 </html>
 <?php

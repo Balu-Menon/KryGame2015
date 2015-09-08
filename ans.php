@@ -5,10 +5,6 @@ require "config.php";
 $s="thisisnotfair";
 function updatetable($nexlev,$table,$user) {
     $t = time();
-    /*$sql="SELECT * FROM $table WHERE FBID='$user'";
-    $result2=mysql_query($sql);
-    $count=mysql_fetch_assoc($result2); 
-	$i=$count['RAN1'];*/
 	$sql="UPDATE $table set LEVELID= $nexlev,TIME=$t where FBID like \"".$_SESSION['usrno']."\""; 
     $recset=mysql_query($sql) or die("There is some technical error4");
     $a=array("resp"=>"39a04db82a0cf3aee49a13304e987f37");
@@ -26,32 +22,32 @@ return $ans;
 
 $user_id = $_SESSION['usrno'];
 if($user_id) {
-    $sql="SELECT * from $usertable2 where fbid = '".$_SESSION['usrno']."'";
+    $sql="SELECT * from $usertable2 where FBID = '$user_id'";
     $recset=mysql_query($sql) or die("There is some technical error1");
     $row=mysql_fetch_assoc($recset);
     $curlev=$row['LEVELID'];
     $nexlev=$curlev+1;
-    $user=$row['FBID'];
-	
+
+	  
     date_default_timezone_set('UTC');
     //date_default_timezone_set('Asia/Calcutta');
-    $sql1="SELECT * from $answerlog where FBID= '".$_SESSION['usrno']."'";
+    $sql1="SELECT * from $answerlog2 where FBID= '$user_id' AND LEVELID='$curlev'";
     $result1=mysql_query($sql1);
     $count1=mysql_num_rows($result1);
-    $fbid=$_SESSION['usrno'];
+  
     if($count1<1) 
     {
         $unixtime = date("d-m-Y H:i:s",mktime());
-        $log=$unixtime."->".$_POST['answer']."-->".$_SESSION['lev']." @@@";
-        $sql="INSERT INTO $answerlog (FBID,LOG)"." VALUES ('$fbid','$log')";
+        $log=$unixtime."->".$_POST['answer']." @@@";
+        $sql="INSERT INTO $answerlog2 (FBID,LEVELID,LOG)"." VALUES ('$user_id','$curlev','$log')";
         $result=mysql_query($sql) or die("There is some technical error5"); 
     }
     else
     {
         $unixtime = date("d-m-Y H:i:s",mktime());
-        $forans=preg_replace('/\s+|[^a-zA-Z1234567890запускдвигтеля]/', '', mb_convert_case($_POST['answer']."0x9", MB_CASE_LOWER, "UTF-8"));
-        $log=$unixtime."->".$forans."-->".$_SESSION['lev']." @@@";
-        $sql="UPDATE $answerlog SET LOG=CONCAT(LOG,'$log') WHERE FBID='$fbid'";
+        $forans=preg_replace('/\s+|[^a-zA-Z1234567890запускдвигтеля]/', '', mb_convert_case($_POST['answer'], MB_CASE_LOWER, "UTF-8"));
+        $log=$unixtime."->".$forans."-->"." @@@";
+        $sql="UPDATE $answerlog2 SET LOG=CONCAT(LOG,'$log') WHERE FBID='$user_id' AND LEVELID='$curlev'";
         mysql_query($sql) or die("There is some technical error7");
     }
     if($_POST['answer']=="")
@@ -65,7 +61,7 @@ if($user_id) {
     $ch_ans= mysql_real_escape_string($ch_ans);
     //$ch_ans=$_POST['answer']; remove comment  wen encryption not given
     
-   $brute="SELECT * FROM  $attacktable where FBID='".$user."'";
+   $brute="SELECT * FROM  $attacktable where FBID='$user_id'";
    $attackresult=mysql_query($brute) or die("There is some technical error2");
    $attackrow = mysql_fetch_assoc($attackresult);
    $attackval = $attackrow["lev".$curlev]-1;
@@ -83,7 +79,8 @@ if($user_id) {
 	if($timediff>=60 || $_SESSION['attempt']>=$maxrate) {
 		
 		if($_SESSION['attempt']>=$maxrate) {
-			$s=mysql_query("UPDATE $usertable2 set NIGGER=1 where FBID='".$user."'");
+			$s=mysql_query("UPDATE $usertable2 set NIGGER=1 where FBID='$user_id'");
+			
 		
 		}
         else {
@@ -91,12 +88,12 @@ if($user_id) {
 			$_SESSION['strtime']=TIME();
 			$_SESSION['attempt']=0;
 		}
-}
+   }
 
 
 
 
-	$brute="UPDATE $attacktable set lev".$curlev."=".$attackval." where FBID='".$user."'";
+	$brute="UPDATE $attacktable set lev".$curlev."=".$attackval." where FBID='$user_id'";
 	mysql_query($brute) or die("There is some technical error3".$curlev);
 
    
@@ -112,10 +109,14 @@ if($user_id) {
                     $ch_ans="9a9fe4ec7b081cca242d40035be8fb8d";
                 $ans="9a9fe4ec7b081cca242d40035be8fb8d";
             break;
+		case 28:$query3=mysql_query("SELECT * FROM $usertable WHERE FBID='$user_id'");
+				$a=mysql_fetch_assoc($query3);
+				$ans=$a['FIRSTNAME']." ".$a['LASTNAME'];
+            break;
         default:$ans=get_ans($curlev);
     }
     if($ch_ans == $ans) {
-        updatetable($nexlev,$usertable2,$user);
+        updatetable($nexlev,$usertable2,$user_id);
     }
     else {
         $a=array("resp"=>"563b9ab8b16c5c96be563348975b9783");

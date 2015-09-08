@@ -18,7 +18,8 @@
 	$attacktable = "attacktable";
 	$usertable2 = "userstatus";
 	$answerlog = "anslog";
-    $maxrate =60;
+	$answerlog2= "anslog2";
+    $maxrate =5;
 	
 	
 ?>

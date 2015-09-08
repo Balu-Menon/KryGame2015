@@ -65,9 +65,9 @@ function testAPI() {
                 $("#fblogin").attr("onclick","fb_login();");
             }
             else if(data) {
-                $("#fblogin").html("Go to Battle!");
+                $("#fblogin").html("Choose Battleground!");
                 $("#fblogin").click(function(){
-                    window.location.assign(data);
+                    window.location.assign("battlegrounds.php");
                 });
             }
             else {

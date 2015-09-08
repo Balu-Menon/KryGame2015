@@ -45,12 +45,16 @@
         
         
     <div id="main-section" class="section">
+        <div id="sound">
+            <i class="fa fa-volume-up" id="sound_on" style="color:#f1f1f1;float:right;font-size:30px;padding: 15px 20px;display:block;"></i>
+            <i class="fa fa-volume-off" id="sound_off" style="color:#f1f1f1;float:right;font-size:30px;padding: 15px 20px;display:none;"></i>
+        </div>
         <nav>
             <div id="main-nav" class="nav-area init-nav">
                 
                 <ul>
                     <li class="nav-link"><a href="index.html">Home</a></li>
-                    <!--li class="nav-link"><a href="battlegrounds.php">Battle Grounds</a></li-->
+                    <li class="nav-link"><a href="battlegrounds.php">Battle Grounds</a></li>
                     <li class="nav-link"><a href="rules.php">War Rules</a></li>
                     <li class="nav-link"><a href="leaderboard/">Leaderboard</a></li>
                     <li class="nav-link"><a href="contact.php">Contact Us</a></li>
@@ -110,5 +114,20 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <script src="js/scripts.js" type="text/javascript"></script>
     <script src="js/main.js" type="text/javascript"></script>
+    <audio loop="" autoplay="" class="audio">
+            <source src="music.mp3" type="audio/mpeg">
+        </audio>
+        <script>
+            var is_on=0,sound_off=0;
+            $('#sound').click(function(){
+                toggleMuteAudio();
+                $('#sound_on').toggle(200);
+                $('#sound_off').toggle(200);
+            });
+            
+            function toggleMuteAudio(){
+                $(".audio").prop("muted",!$(".audio").prop("muted"));
+            }
+        </script>
 </body>
 </html>

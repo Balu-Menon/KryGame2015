@@ -1,0 +1,6 @@
+<img style="width:200px;height:110px;" src="img/quest/qWsrs.jpg">
+<img style="width:200px;" src="img/quest/qLtrt.jpg">
+<img style="width:200px;height:110px;" src="img/quest/qWsrt.jpg"><br>
+<img style="width:200px;" src="img/quest/qLtrs.jpg">
+<img style="width:200px;height:110px;" src="img/quest/qWsru.jpg">
+<img style="width:200px;" src="img/quest/qLtru.jpg">
