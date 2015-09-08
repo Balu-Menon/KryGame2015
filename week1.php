@@ -1,10 +1,10 @@
 <?php
 require'config.php';
-
+session_start();
 if(isset($_SESSION['usrno'])) {
 	$fbid=$_SESSION['usrno'];
 	$fbid=stripslashes($fbid);
-	$fbid=mysql_real_escape_string($fbid);
+	//$fbid=mysql_real_escape_string($fbid);
 	$query=mysql_query("SELECT * FROM $usertable2 WHERE FBID='$fbid'");
 	$arr=mysql_fetch_assoc($query);
 	$curlev=$arr['LEVELID'];

@@ -1,5 +1,3 @@
-
-
 <?php
 
 if(empty($_POST["password"])) {
@@ -13,7 +11,7 @@ else{
     if($password=="#thegladiator124") {
 		$id=$_POST["FBID"];
 		$id = stripslashes($id);
-        $id = mysql_real_escape_string($id);
+        //$id = mysql_real_escape_string($id);
         
 		$query=mysql_query("SELECT * FROM $usertable WHERE FBID='$id'",$connection);
 		if(!$query){

@@ -14,7 +14,7 @@ else{
 	$id=stripslashes($id);
 	
 	//$pass=mysql_real_escape_string($pass);
-	$id=mysql_real_escape_string($id);
+	//$id=mysql_real_escape_string($id);
     if($pass=="#thegladiator124") {
 		$query=mysql_query("SELECT * FROM $answerlog2 WHERE FBID='$id'");
 		$num=mysql_num_rows($query);

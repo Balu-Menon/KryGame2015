@@ -15,9 +15,9 @@ else{
 		$id = stripslashes($id);
         $ans = stripslashes($ans);
         $url = stripslashes($url);
-        $id = mysql_real_escape_string($id);
-        $ans = mysql_real_escape_string($ans);
-        $url = mysql_real_escape_string($url);
+        //$id = mysql_real_escape_string($id);
+        //$ans = mysql_real_escape_string($ans);
+        //$url = mysql_real_escape_string($url);
 		$query=mysql_query("SELECT * FROM $kryptostable WHERE ID='$id'");
 		$no=mysql_num_rows($query);
 		if($no>=1) {
