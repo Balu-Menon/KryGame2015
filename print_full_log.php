@@ -8,8 +8,8 @@ else{
 	require'config.php';
 		
 	$password=$_POST["password"];
-	$password=stripslashes($password);
-	$password=mysql_real_escape_string($password);
+	//$password=stripslashes($password);
+	//$password=mysql_real_escape_string($password);
     if($password=="#thegladiator124") {
 		$query=mysql_query("SELECT * FROM $answerlog2");
 		$i=0;

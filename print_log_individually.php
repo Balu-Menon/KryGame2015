@@ -10,10 +10,10 @@ else{
 	$pass=$_POST['password'];
 	$id=$_POST['ID'];
 	
-	$pass=stripslashes($pass);
+	//$pass=stripslashes($pass);
 	$id=stripslashes($id);
 	
-	$pass=mysql_real_escape_string($pass);
+	//$pass=mysql_real_escape_string($pass);
 	$id=mysql_real_escape_string($id);
     if($pass=="#thegladiator124") {
 		$query=mysql_query("SELECT * FROM $answerlog2 WHERE FBID='$id'");

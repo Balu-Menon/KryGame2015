@@ -4,11 +4,11 @@ $pass=$_POST['password'];
 $id=$_POST['ID'];
 $level=$_POST['LEVEL'];
 
-$pass=stripslashes($pass);
+//$pass=stripslashes($pass);
 $id=stripslashes($id);
 $level=stripslashes($level);
 
-$pass=mysql_real_escape_string($pass);
+//$pass=mysql_real_escape_string($pass);
 $id=mysql_real_escape_string($id);
 $level=mysql_real_escape_string($level);
 

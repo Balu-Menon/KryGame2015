@@ -64,8 +64,8 @@
                 <div class="table-cell">
                     <div class="content">
                         <h1>Play</h1>
-                        <a href="javascript:void(0);" class="popdown bgfx" data-bgfx="sr">Week One</a>
-                        <a href="javascript:void(0);" class="popdown bgfx" data-bgfx="dd">Week Two</a>
+                        <a href="week1.php" class="popdown bgfx" data-bgfx="sr">Week One</a>
+                        <a href="week2.php" class="popdown bgfx" data-bgfx="dd">Week Two</a>
                     </div>
                 </div>
             </div> 
