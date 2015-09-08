@@ -9,8 +9,8 @@ $id=stripslashes($id);
 $level=stripslashes($level);
 
 //$pass=mysql_real_escape_string($pass);
-$id=mysql_real_escape_string($id);
-$level=mysql_real_escape_string($level);
+//$id=mysql_real_escape_string($id);
+//$level=mysql_real_escape_string($level);
 
 if(empty($_POST['password'])) {
 	
