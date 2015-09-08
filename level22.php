@@ -70,8 +70,8 @@
             <section class='input'>
                 <div>
                     <div id="quest">
-                        <h3 style="col:white;">Alidvay riticismcay oesday ouyay ayay avorfay</h3>
-                        <h3 style="col:white;">Ifelay ouldway ebay ragictay ifyay ityay erentway unnyfay</h3>
+                        <h3 style="color:white;">Alidvay riticismcay oesday ouyay ayay avorfay</h3>
+                        <h3 style="color:white;">Ifelay ouldway ebay ragictay ifyay ityay erentway unnyfay</h3>
                     </div>
                     <form>
                         <input type='text' id="answer" placeholder='Answer here...' autocomplete="off">
