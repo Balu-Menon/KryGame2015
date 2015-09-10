@@ -17,7 +17,7 @@
 <head>
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title>Leve 23 | Kryptos</title>
+	<title>Level 23 | Kryptos</title>
     <meta name="description" content="Kryptos is an online Treasure hunt which is the best of its kind. Varied levels with puzzles, clues, cryptograohy, hacking is to be done for a true sherlock to win this game of Treasure hunt. Google and Wikipedia will help you to win this quest to win the bounty and find the treasure." />
     <meta name="keywords" content="excelmec, excel, mec, excel2015, 2015, online treasure hunt,online games, techfest, souoth india, kerala, cochin, model engineering college, model, engineering college, college, academy, engineering, electronics, computer science, electrical, biomedical, bio-medical, technology, inspire, innovate, biggest, technical, symposium"/>
     <link rel="icon" type="image/png" href="img/img.png" />
@@ -178,7 +178,7 @@
                         else
                         {
                             FB.api('/me/feed', 'post', {
-                                message: "I Just unlocked Level 23 of Kryptos! Can you do better? Prizes worth 15K!!!\nStart Playing Now!\nhttp://kryptos.excelmec.org/\n#Kryptos2015\n#Addicted",
+                                message: "I Just unlocked Level 23 of Kryptos! Can you do better? Prizes worth 15K!!!\nStart Playing Now!\nhttp://kryptos.excelmec.org/\nhttp://excelmec.org/excel2015/\n#Kryptos2015\n#Addicted",
                                 name: "Kryptos 2015",
                             });
                             window.location.replace('validate.php');

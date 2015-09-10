@@ -175,7 +175,7 @@
                         else
                         {
                             FB.api('/me/feed', 'post', {
-                                message: "I Just unlocked Level 2 of Kryptos! Can you do better? Prizes worth 15K!!!\nStart Playing Now!\nhttp://kryptos.excelmec.org/",
+                                message: "I Just unlocked Level 2 of Kryptos! Can you do better? Prizes worth 15K!!!\nStart Playing Now!\nhttp://kryptos.excelmec.org/\nhttp://excelmec.org/excel2015/",
                                 name: "Kryptos 2015",
                             });
                             window.location.replace('validate.php');
