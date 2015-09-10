@@ -19,7 +19,7 @@
 	$usertable2 = "userstatus";
 	$answerlog = "anslog";
 	$answerlog2= "anslog2";
-    $maxrate =5;
+    $maxrate =120;
 	
 	
 ?>
