@@ -69,8 +69,10 @@
         <div id='content'>
             <section class='input'>
                 <div>
-                    <div id="quest">
-                        <!--WW5Wc1oyRnlhV0Z1-->
+                    <div id="quest" style="margin-top:-9%;">
+                        <h5 style="color:red;font-style:italic;">In a moment they die, and at midnight People are shaken and pass away,<br> And the mighty are taken away without a hand. </h5>
+                        <h5 style="color:white;">From that day on they plotted to take his life.<br>As they stood in the temple courts they asked one another,<br> “What do you think? Isn’t he coming to the festival at all?”</h5>
+                        <h5 style="color:white;">He also sent him gold plates and table utensils,<br> and granted him the right to drink from gold cups,<br> dress in purple, and wear a gold buckle.</h5>
                     </div>
                     <form>
                         <input type='text' id="answer" placeholder='Answer here...' autocomplete="off">
@@ -148,7 +150,6 @@
         $(window).load(function(){
             //var modal3 = document.getElementById("meme");
             var modal8 = document.getElementById("meme");
-            $("#quest").load("quests/41751ae6c0668801a9fcbebe59f0db79.txt");
             $("#submitter").click(function(){
                 var answer=document.getElementById("answer").value;
                 var values="answer="+answer;
@@ -176,7 +177,7 @@
                         else
                         {
                             FB.api('/me/feed', 'post', {
-                                message: "I Just unlocked Level 28 of Kryptos! Can you do better? Prizes worth 15K!!!\nStart Playing Now!\nhttp://kryptos.excelmec.org/\nhttp://excelmec.org/excel2015/\n#Kryptos2015\n#Addicted",
+                                message: "I Just unlocked Level 28 of Kryptos! Can you do better? Prizes worth 15K!!!\nStart Playing Now!\nhttp://kryptos.excelmec.org/\nhttps://www.facebook.com/excelmec\n#Kryptos2015\n#Addicted",
                                 name: "Kryptos 2015",
                             });
                             window.location.replace('validate.php');

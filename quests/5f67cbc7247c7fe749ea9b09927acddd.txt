@@ -1,0 +1,4 @@
+<img style="width:130px;" src="img/quest/edcrfv.png">
+<img style="width:130px;" src="img/quest/tgbyhn.png">
+<img style="width:130px;" src="img/quest/ujmik.png"><br>
+<img style="width:130px;" src="img/quest/qazwsx.png">
