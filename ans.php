@@ -109,7 +109,7 @@ if($user_id) {
                     $ch_ans="9a9fe4ec7b081cca242d40035be8fb8d";
                 $ans="9a9fe4ec7b081cca242d40035be8fb8d";
             break;
-		case 28:$query3=mysql_query("SELECT * FROM $usertable WHERE FBID='$user_id'");
+		case 48:$query3=mysql_query("SELECT * FROM $usertable WHERE FBID='$user_id'");
 				$a=mysql_fetch_assoc($query3);
 				$ans=$a['FIRSTNAME']." ".$a['LASTNAME'];
             break;
