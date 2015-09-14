@@ -3,6 +3,7 @@ session_start();
 ini_set('session.cookie_lifetime',  0);
 require "config.php";
 $s="thisisnotfair";
+$fbid=$_SESSION['usrno'];
 function updatetable($nexlev,$table,$user) {
     $t = time();
 	$sql="UPDATE $table set LEVELID= $nexlev,TIME=$t where FBID like \"".$_SESSION['usrno']."\""; 
@@ -109,6 +110,42 @@ if($user_id) {
                     $ch_ans="9a9fe4ec7b081cca242d40035be8fb8d";
                 $ans="9a9fe4ec7b081cca242d40035be8fb8d";
             break;
+        case 34:
+                $query=mysql_query("SELECT * FROM $usertable2 ORDER BY LEVELID DESC,TIME ASC");
+                $x=0;
+                while($row=mysql_fetch_array($query)) {        
+                    $x++;
+                    if($row['FBID']==$fbid) {
+                        break;
+                    }        
+                }
+                switch($_POST['rand']){
+                    case 0:$z=2*$x+8;break;
+                    case 1:$z=$x+1;break;
+                    case 2:$z=$x+4;break;
+                    case 3:$z=6*$x+12;break;
+                    case 4:$z=$x+7;break;
+                    case 5:$z=$x+9;break;
+                    case 6:$z=2*$x+1;break;
+                    case 7:$z=4*$x+2;break;
+                    case 8:$z=$x+2;break;
+                    case 9:$z=$x+5;break;
+                    }
+                $query=mysql_query("SELECT * FROM $usertable2 ORDER BY LEVELID DESC,TIME ASC");
+                $x=0;                
+                while($row=mysql_fetch_array($query)) {
+                    $user=$row['FBID'];
+                   $x=$x+1;
+                    $query1=mysql_query("SELECT * FROM $usertable WHERE FBID='$user'");
+                    $row1=mysql_fetch_assoc($query1);
+                    if($x==$z) {
+                      $c_ans=$row1['FIRSTNAME'].$row1['LASTNAME'];                     
+                      break;
+                    }
+        
+                }
+                $ans=md5(preg_replace('/\s+|[^a-zA-Z1234567890запускдвигтеля]/', '', mb_convert_case($s.$c_ans, MB_CASE_LOWER, "UTF-8")));
+                break;
 		case 48:$query3=mysql_query("SELECT * FROM $usertable WHERE FBID='$user_id'");
 				$a=mysql_fetch_assoc($query3);
 				$ans=$a['FIRSTNAME']." ".$a['LASTNAME'];
