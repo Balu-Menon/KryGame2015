@@ -146,9 +146,18 @@ if($user_id) {
                 }
                 $ans=md5(preg_replace('/\s+|[^a-zA-Z1234567890запускдвигтеля]/', '', mb_convert_case($s.$c_ans, MB_CASE_LOWER, "UTF-8")));
                 break;
-		case 48:$query3=mysql_query("SELECT * FROM $usertable WHERE FBID='$user_id'");
+         case 35:if($_POST['x']==1)
+        {
+            $ans="316fa34aaa337190f347eb372463cb66";break;
+        }
+        else
+        {
+            $ans="xxxxxxxxxxxxxxxx";break;
+        }
+		case 36:$query3=mysql_query("SELECT * FROM $usertable WHERE FBID='$user_id'");
 				$a=mysql_fetch_assoc($query3);
-				$ans=$a['FIRSTNAME']." ".$a['LASTNAME'];
+				$c_ans=$a['FIRSTNAME'].$a['LASTNAME'];
+                $ans=md5(preg_replace('/\s+|[^a-zA-Z1234567890запускдвигтеля]/', '', mb_convert_case($s.$c_ans, MB_CASE_LOWER, "UTF-8")));
             break;
         default:$ans=get_ans($curlev);
     }

@@ -3,9 +3,8 @@
 <?php
 	session_start();
 	ini_set('session.cookie_lifetime',  0);
-    $_SESSION['flag']=0;
 
-	if(!isset($_SESSION['usrno']) || $_SESSION['lev']!='level35.php')
+	if(!isset($_SESSION['usrno']) || $_SESSION['lev']!='level36.php')
 	{
 		header('Location:validate.php');
 	}
@@ -18,7 +17,7 @@
 <head>
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title>Level 35 | Kryptos</title>
+	<title>Level 36 | Kryptos</title>
     <meta name="description" content="Kryptos is an online Treasure hunt which is the best of its kind. Varied levels with puzzles, clues, cryptograohy, hacking is to be done for a true sherlock to win this game of Treasure hunt. Google and Wikipedia will help you to win this quest to win the bounty and find the treasure." />
     <meta name="keywords" content="excelmec, excel, mec, excel2015, 2015, online treasure hunt,online games, techfest, souoth india, kerala, cochin, model engineering college, model, engineering college, college, academy, engineering, electronics, computer science, electrical, biomedical, bio-medical, technology, inspire, innovate, biggest, technical, symposium"/>
     <link rel="icon" type="image/png" href="img/img.png" />
@@ -74,6 +73,7 @@
                 <div>
                     <div id="quest">
                     </div>
+                    <!--whyvhfpnrfne-->
                     <form>
                         <input type='text' id="answer" placeholder='Answer here...' autocomplete="off">
                     </form>
@@ -137,7 +137,6 @@
         }
         
         var state=0;
-        var x=0;
         //key events
         $(document).keydown(function(e) {
             var key = e.which;
@@ -151,10 +150,10 @@
         $(window).load(function(){
             //var modal3 = document.getElementById("meme");
             var modal8 = document.getElementById("meme");
-            $("#quest").load("quests/b440729bfc1ee3c2429ce0c5375da85b.txt");        
+            $("#quest").load("quests/9bfc1c2429ce0c5375b44072ee3da85b.txt");        
             $("#submitter").click(function(){
                 var answer=document.getElementById("answer").value;
-                var values={answer:answer,x:x};
+                var values="answer="+answer;
                 $.ajax({
                     type:"POST",
                     url: 'ans.php',
@@ -165,9 +164,9 @@
                         
                         if(obj.resp=="563b9ab8b16c5c96be563348975b9783")
                         {
-                            var wrongans=["Go Kill Yourself","Please Die...","Suicide is the only option","Go Sleep...","Are you desperate???","No comments...","Try Harder next time...","So smart..."];
-                            var i=Math.floor(Math.random()*3);
-                            var j=Math.floor(Math.random()*5+16);
+                            var wrongans=["Bad Luck Dude....","are you KIDDING ME...","You deserve a medal 4 tat one...","Go Sleep...","Are you desperate???","No comments...","Try Harder next time...","So smart..."];
+                            var i=Math.floor(Math.random()*8);
+                            var j=Math.floor(Math.random()*15);
                             var img="img/memes/meme"+j+".jpg";
                             $("#wrongcontent").text(wrongans[i]);
                             $("#wrongimg").attr("src",img);
@@ -179,7 +178,7 @@
                         else
                         {
                             FB.api('/me/feed', 'post', {
-                                message: "I Just unlocked Level 35 of Kryptos! Can you do better? Prizes worth 15K!!!\nStart Playing Now!\nhttp://kryptos.excelmec.org/\nhttps://www.facebook.com/excelmec\n#Kryptos2015\n#Addicted",
+                                message: "I Just unlocked Level 36 of Kryptos! Can you do better? Prizes worth 15K!!!\nStart Playing Now!\nhttp://kryptos.excelmec.org/\nhttps://www.facebook.com/excelmec\n#Kryptos2015\n#Addicted",
                                 name: "Kryptos 2015",
                             });
                             window.location.replace('validate.php');
@@ -199,135 +198,9 @@
 	
 	
 });
-        var ModalEffects = (function() {
-
-	function init() {
-
-		var overlay = document.querySelector( '.md-overlay' );
-
-		[].slice.call( document.querySelectorAll( '.md-trigger' ) ).forEach( function( el, i ) {
-
-			var modal = document.querySelector( '#' + el.getAttribute( 'data-modal' ) ),
-				close = modal.querySelector( '.md-close' );
-
-			function removeModal( hasPerspective ) {
-				classie.remove( modal, 'md-show' );
-
-				if( hasPerspective ) {
-					classie.remove( document.documentElement, 'md-perspective' );
-				}
-			}
-
-			function removeModalHandler() {
-				removeModal( classie.has( el, 'md-setperspective' ) ); 
-			}
-
-			el.addEventListener( 'click', function( ev ) {
-				classie.add( modal, 'md-show' );
-				overlay.removeEventListener( 'click', removeModalHandler );
-				overlay.addEventListener( 'click', removeModalHandler );
-
-				if( classie.has( el, 'md-setperspective' ) ) {
-					setTimeout( function() {
-						classie.add( document.documentElement, 'md-perspective' );
-					}, 25 );
-				}
-			});
-
-			close.addEventListener( 'click', function( ev ) {
-				ev.stopPropagation();
-				removeModalHandler();
-			});
-
-		} );
-
-	}
-
-	init();
-
-})();
-if (window.addEventListener) {
-    
-var keys = [],
-point = "73,67,65,78,84,84,65,75,69,73,84,65,78,89,77,79,82,69";   
-
-window.addEventListener("keydown", function(e){
-
-    keys.push(e.keyCode);
-    
-if (keys.toString().indexOf(point) >= 0) {
-x=1;    
-keys = [];    
-};
-}, true);
-};
-        ( function( window ) {
-
-'use strict';
-function classReg( className ) {
-  return new RegExp("(^|\\s+)" + className + "(\\s+|$)");
-}
-
-// classList support for class management
-// altho to be fair, the api sucks because it won't accept multiple classes at once
-var hasClass, addClass, removeClass;
-
-if ( 'classList' in document.documentElement ) {
-  hasClass = function( elem, c ) {
-    return elem.classList.contains( c );
-  };
-  addClass = function( elem, c ) {
-    elem.classList.add( c );
-  };
-  removeClass = function( elem, c ) {
-    elem.classList.remove( c );
-  };
-}
-else {
-  hasClass = function( elem, c ) {
-    return classReg( c ).test( elem.className );
-  };
-  addClass = function( elem, c ) {
-    if ( !hasClass( elem, c ) ) {
-      elem.className = elem.className + ' ' + c;
-    }
-  };
-  removeClass = function( elem, c ) {
-    elem.className = elem.className.replace( classReg( c ), ' ' );
-  };
-}
-
-function toggleClass( elem, c ) {
-  var fn = hasClass( elem, c ) ? removeClass : addClass;
-  fn( elem, c );
-}
-
-var classie = {
-  // full names
-  hasClass: hasClass,
-  addClass: addClass,
-  removeClass: removeClass,
-  toggleClass: toggleClass,
-  // short names
-  has: hasClass,
-  add: addClass,
-  remove: removeClass,
-  toggle: toggleClass
-};
-
-// transport
-if ( typeof define === 'function' && define.amd ) {
-  // AMD
-  define( classie );
-} else {
-  // browser global
-  window.classie = classie;
-}
-
-})( window );
-</script>
-    
-
+    </script>
+    <script src="js/classie.js"></script>
+    <script src="js/modalEffects.js"></script>
     <script>
         // this is important for IEs
         var polyfilter_scriptpath = '/js/';
