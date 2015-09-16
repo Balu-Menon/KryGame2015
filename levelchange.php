@@ -3,10 +3,12 @@
 $pass=$_POST['password'];
 $id=$_POST['ID'];
 $level=$_POST['LEVEL'];
+$time=$_POST['TIME'];
 
 //$pass=stripslashes($pass);
 $id=stripslashes($id);
 $level=stripslashes($level);
+$time=stripslashes($time);
 
 //$pass=mysql_real_escape_string($pass);
 //$id=mysql_real_escape_string($id);
@@ -23,7 +25,7 @@ else {
 					$query=mysql_query("SELECT * FROM $usertable2 WHERE FBID='$id'");
 					$num=mysql_num_rows($query);
 					if($num==1) {
-					$query1=mysql_query("UPDATE $usertable2 SET LEVELID='$level' WHERE FBID='$id'");
+					$query1=mysql_query("UPDATE $usertable2 SET LEVELID='$level',TIME='$time' WHERE FBID='$id'");
 					if(!$query1){
 						echo "update failed";
 						die();
